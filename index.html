@@ -1,38 +1,891 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Hriday Sur</title>
-  <base href="/">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Website Title -->
+    <title>Hriday Sur</title>
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- Lightbox -->
+	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+    <!-- Text Rotator-->
+	<link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
+	<!-- FlexSlider -->
+    <link href="assets/flexslider/flexslider.css" rel="stylesheet">
+    <!-- lineicon -->
+    <link href="css/lineicon.mini.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/alertify.min.css"/>
+    <!-- Theme Style -->
+    <link href="css/style.css" rel="stylesheet">
+	<!-- Animations -->
+    <link href="css/animate.css" rel="stylesheet">
+	<!-- Custom Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="assets/html5shiv/html5shiv.js"></script>
+    <script src="assets/respond/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    <body id="top">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDICIe1AmItZQvz70voxsxzzMDszINdKaI&callback=initMap"
-        ></script>
+      <!-- ****************************** Preloader ************************** -->
+      <div id="preloader"></div>
 
-<!-- mobile specific metas
-   ================================================== -->
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	  	<!-- ==========================
+        HEADER SECTION 
+        =========================== -->
+        <header id="home">
+		    <!-- creative menu -->
+            <div  class="open">
+                    <span class="cls"></span>
+                    <span>
+                        <ul class="sub-menu">
+                            <li>
+                            <a href="index.html#home" onclick="closeMenu()"><i class="fa fa-fw fa-home"></i> Home</a>
+                            </li>
+                            <li>
+                            <a href="index.html#about" onclick="closeMenu()"><i class="fa fa-fw fa-quote-left"></i> About</a>
+                            </li>
+                            <li>
+                            <a href="index.html#service" onclick="closeMenu()"><i class="fa fa-fw fa-globe"></i> Work</a>                            
+                            </li>
+                            <li>
+                            <a href="index.html#contact" onclick="closeMenu()"><i class="far fa-envelope-open"></i> Contact</a>
+                            </li>
+                        </ul>
+                    </span>
+                    <span class="cls"></span>
+                </div>
+		  <!-- Header Image -->
+          <section class="hero" id="hero">
+            <div class="container">
+			  <!-- Slider Button (don't edit!)-->
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+                </div>
+              </div>
+			  <!-- HEADER HEADLINE -->
+              <div class="row">
+                <div class="col-md-8 col-md-offset-1 inner">
+                  <ul class="animated fadeInDown">
+                    <li id="parlx1" data-rate="-0.5">I<span style="color:#FFE800">'</span>m<br/></li>  
+                    <li id="parlx1" data-rate="-0.3">H<span style="color:#E04343;">r</span>id<span style="color:#E04343;">a</span>y<br/></li>
+                    <li id="parlx1" data-rate="-0.1"><span>S<span style="color:#FFE800">u</span>r</span></li>
+                  </ul><!-- Title -->
+                  <h3 class="animated fadeInUp delay-05s" id="parlx1" data-rate="-0.1"><span class="rotate">Web Developer,Software Developer</span></h3><!-- Text Rotator -->
+                </div>
+              </div>
+			  <!-- Learn More Button -->
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                  <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
+			            <p>SEE MORE</p>
+			            <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
+			        </a>
+                </div>
+              </div>
+            </div>
+          </section>
+		  <!-- Header Image End -->
+        </header>
+		<!-- ==========================
+        HEADER SECTION END  
+        =========================== -->
+		
+		
+		
+		
+		<!-- ==========================
+        ABOUT SECTION  
+        =========================== -->
+        <section class="intro text-center section-padding color-bg" id="about">
+          <div class="container">
+		    <!-- WELCOME TEXT -->
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 aboutMe" data-scroll>
+                <h1 class="arrow">A little <span>about</span> me</h1><!-- Headline -->
+				<!-- about / welcome text -->
+                <p> I am a freelance Full-stack developer who loves to code & write application to build great products & help business succeed with there goals. My work is something I do with a lot of honesty, appetite and commitment. In my spare time you will my find me exploring & traveling new places. Appart from that I love playing chess.</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-<link rel="stylesheet" href="styles.39474aa2527979a288c2.css"></head>
-<body>
-  <app-root>
-    <div class="heart-rate">
-      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="73px" viewBox="0 0 150 73" enable-background="new 0 0 150 73" xml:space="preserve">
-        <polyline fill="none" stroke="#009B9E" stroke-width="3" stroke-miterlimit="10" points="0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486"
-        />
-      </svg>
-      <div class="fade-in"></div>
-      <div class="fade-out"></div>
-    </div>
-  </app-root>
-<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.2f4a59095805af02bd79.js"></script><script type="text/javascript" src="main.62ca07559139715cf901.js"></script></body>
+
+
+
+<!-- ==========================
+        SERVICE SECTION 
+        =========================== -->
+        <section class="features text-center section-padding" id="service">
+          <div class="container">
+        <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">I do amazing things for clients</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+          <div class="services">
+          <!-- Service Box 1 -->
+                  <div class="col-md-4 wp2 item">
+                    <div class="icon">
+                      <i class="fa fa-code"></i><!-- Icon -->
+                    </div>
+                    <h2>Development</h2><!-- Title -->
+                    <p>Front & Back end Development is one of the thing that I am passionate about. Using React/Redux, Angular 2+, NodeJS, C#, SQL, No-SQL, I built servers, API's, Secure & Authenticated Applications.</p>
+                    <!--Description -->
+                  </div>
+          <!-- Service Box 2 -->
+                  <div class="col-md-4 wp2 item delay-05s">
+                    <div class="icon">
+                      <i class="fa fa-desktop"></i><!-- Icon -->
+                    </div>
+                    <h2>Design</h2><!-- Title -->
+                    <p>Web/Application is building out the visual components of a website. Using HTML, CSS , and Javascript, I build fast, interactive websites. This includes Web Design, UI & UX.</p><!--Description -->
+                  </div>
+          <!-- Service Box 3 -->
+                  <div class="col-md-4 wp2 item delay-1s">
+                    <div class="icon">
+                        <i class="far fa-lightbulb"></i><!-- Icon -->
+                    </div>
+                    <h2>Branding & Logo Design</h2><!-- Title -->
+                    <p>While most of my attention is on interactive projects, I do branding and collateral from time to time. This includes logo design, business cards, and other printed materials.</p><!--Description -->
+                  </div>
+          </div>
+                  <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="intro text-center section-padding color-bg" id="about">
+                <div class="container">
+                  <!-- WELCOME TEXT -->
+                  <div class="row">
+                    <div class="col-md-8 col-md-offset-2 aboutMe" data-scroll>
+                      <h1 class="arrow">Here's a <span>couple of things</span> I am good at</h1><!-- Headline -->
+                      <!-- about / welcome text -->
+                      <p> Hard-working web developer with a flair for creating elegant solutions in the least amount of time. I understand the challenges of working remotely. I realize the importance of good <span style="color:#FFE800">communication</span>. I use tools like slack to make sure we are on a same page. I believe it’s important to stay <spna style="color:#FFE800">organised</spna> while working remotely. I use the likes of Trello & Basecamp to help keep projects on-track and under control.I value my <span style="color:#FFE800">clients’ time</span> and always aim to work efficiently. I account for and track everything I do using services such as Toggl.</p>
+                    </div>
+                  </div>
+                </div>
+        </section>
+
+        <section class="skill-bars">
+            <div class="container">                
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="skills-left skills" data-scroll>
+                            <h3>Design</h3>
+                            <ul class="skills-ul">
+                                <li>
+                                    <span>Web Design</span>
+                                    <div class="skill-bar-holder">
+                                        <div class="skill-capacity col-xs-9"></div>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <span>Mobile design</span>
+                                    <div class="skill-bar-holder">
+                                        <div class="skill-capacity col-xs-7"></div>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <span>Branding &amp; Identity</span>
+                                    <div class="skill-bar-holder">
+                                        <div class="skill-capacity col-xs-7"></div>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <span>Photoshop &amp; Illustrator</span>
+                                    <div class="skill-bar-holder">
+                                        <div class="skill-capacity col-xs-6"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-12">
+                        <div class="skills-right skills" data-scroll>
+                            <h3 id="developing">Developing</h3>
+                            <ul class="skills-ul">
+                                    <li>
+                                        <span>NodeJS/ ExpressJS/ MongoDB</span>
+                                        <div class="skill-bar-holder">
+                                            <div class="skill-capacity col-xs-11"></div>
+                                        </div>
+                                    </li>
+                                        
+                                    <li>
+                                        <span>C# &amp; .Net Core</span>
+                                        <div class="skill-bar-holder">
+                                            <div class="skill-capacity col-xs-9"></div>
+                                        </div>
+                                    </li>
+                                <li>
+                                    <span>HTML &amp; CSS3</span>
+                                    <div class="skill-bar-holder">
+                                        <div class="skill-capacity col-xs-8"></div>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <span>Javascript/ Angular 6/ ReactJS</span>
+                                    <div class="skill-bar-holder">
+                                        <div class="skill-capacity col-xs-9"></div>
+                                    </div>
+                                </li>
+                                
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+    
+            </div>
+        </section>
+
+
+		<!-- ==========================
+        ABOUT SECTION END
+        =========================== -->	
+
+		
+		
+		
+		<!-- ==========================
+        PORTFOLIO SECTION
+    =========================== -->
+        <section class="swag text-center" id="portfolio">
+          <div class="container">
+		    <!-- Headline -->
+            <div class="row">
+              <h1 class="arrow">
+                Recent <span>Projects</span>
+              </h1>
+            </div>
+          </div>
+        </section>
+
+        <div class="bg-light" id="portfolio1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                      <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal1">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                          </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="img/portfolio/campsite.jpeg" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h3>YelpCamp on Heroku</h3>
+                        <p class="text-muted">Web Development</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                      <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal2">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                          </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="img/portfolio/restaurant-technology-TEASER.png" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h3>Restaurant Management System</h3>
+                        <p class="text-muted">Front-End Development</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                      <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal3">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                          </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="img/portfolio/e-commerce-platforms.png" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h3>Auction System</h3>
+                        <p class="text-muted">Web Development, E-Commerce</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                      <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal4">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                          </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="img/portfolio/distance-learning.jpg" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h3>Distance-Learning</h3>
+                        <p class="text-muted">Web Development</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                      <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal5">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                          </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="img/portfolio/event-management.jpeg" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h3>Event Management</h3>
+                        <p class="text-muted">Web Development</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                      <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal6">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                            <i class="fas fa-plus fa-3x"></i>
+                          </div>
+                        </div>
+                        <img class="img-fluid portfolio-img" src="img/portfolio/DSC_0592.JPG" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h3>Portfolio</h3>
+                        <p class="text-muted">Website Design</p>
+                      </div>
+                    </div>
+                  </div><!--/row-->
+            </div>
+        </div>
+        <!--/.container-->
+
+        
+  
+     
+		<!-- ==========================
+        PORTFOLIO SECTION END
+        =========================== -->
+			
+
+
+			
+		<!-- ==========================
+        CUSTOM SPACER
+        =========================== -->
+		<div class="spacer-cta text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <a href="index.html#contact" class="outline-btn">Contact Me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+		<!-- ==========================
+        CUSTOM SPACER END
+        =========================== -->
+		
+		
+
+    <!-- ==========================
+        Timeline SECTION 
+        =========================== -->
+        <section class="timeline-1">
+				<div class="container">
+                        <div class="row swag text-center">
+                                <h1 class="arrow">
+                                  Here is a Little of <span>My Story</span>
+                                </h1>
+                        </div>
+					
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="timeline-event">
+								<div class="col-sm-6 col-md-push-6">
+									<h2>November, 2018 - Continue</h2>
+									<h5>Full-Stack Developer At Ayuda Media Systems<br></h5>
+								</div>
+								
+								<div class="middle">
+                                    <i class="fas fa-code-branch"></i>
+									<div class="vertical-line"></div>
+								</div>
+								
+								<div class="col-sm-6 col-md-pull-6">
+                                      <p>Work collaboratively with clients and in-house agency teams to provide rapid, robust and client-acclaimed front- and back-end web development optimizing user experience</p>
+                                </div>
+								
+								
+							</div>
+							
+							<div class="timeline-event">
+								<div class="col-sm-6">
+									<h2>Sept. 2016- June 2018</h2>
+									<h5>Electrical & computer Science (M.Engg)</h5>	
+								</div>
+								
+								<div class="middle">
+                                    <i class="fas fa-graduation-cap"></i>
+									<div class="vertical-line"></div>
+								</div>
+								
+								<div class="col-sm-6">
+									<p>Completed Masters of Engineering in <strong>Computer Science</strong> with <strong>3.5 CGPA</strong> at Concordia University, Montreal, Canada.</p>
+								</div>
+							</div>
+							
+							<div class="timeline-event">
+								<div class="col-sm-6 col-md-push-6">
+									<h2>Nov. 2014 - August 2016</h2>
+									<h5>Software Developer</h5>
+								</div>
+								
+								<div class="middle">
+                                    <i class="fas fa-code"></i>
+									<div class="vertical-line"></div>
+								</div>
+								
+								<div class="col-sm-6 col-md-pull-6">
+                                       <p>
+                                            Experiance working in green-field Project as well as handled routin maintainance, recovery & failover of database server.
+                                            Design & Developed services for certain task, that <strong>save 50% times</strong> as well helped <strong>solve problems</strong>.    
+                                       </p> 
+                                </div>
+								
+								
+							</div>
+							
+							<div class="timeline-event">
+								<div class="col-sm-6">
+									<h2>July 2013- Nov. 2014</h2>
+									<h5>Web Developer Intern</h5>	
+								</div>
+								
+								<div class="middle">
+                                    <i class="fas fa-globe-europe"></i>
+									<div class="vertical-line"></div>
+								</div>
+								
+								<div class="col-sm-6">
+									<p>Good Development experience using Windows Platforms
+                                            with ASP.NET with C#, NodeJs, AngularJs.REST APIs development to be consumed by mobile
+                                            application team.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+		
+				</div>
+			</section>
+
+		
+		
+		<!-- ==========================
+        CONTACT SECTION
+        =========================== -->
+        <section class="text-center section-padding contact-wrap" id="contact">
+		  <!-- To Top Button -->
+          <!-- <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a> -->
+          <div class="container">
+		    <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Drop <span>me</span> a line</h1>
+              </div>
+            </div>
+            <div class="row contact-details">
+			  <!-- Adress Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
+                  <p>2150 Boulevard de Maisonneuve O, Montreal, Canada</p>
+                </div>
+              </div>
+			  <!-- Phone Number Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
+                  <p>+1 (514)-706-5942</p>
+                </div>
+              </div>
+			  <!-- E-Mail Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+                  <p><a href="index.html#">hridaysur@yahoo.co.in</a></p>
+                </div>
+              </div>
+            </div>
+			<div class="row">
+			  <!-- Google Maps (Change your Settings below) -->
+			  <div class="col-md-6">
+			    <div id="googlemaps"></div>
+			  </div>
+			  <!-- Contact Form -->
+			  <div class="col-md-6 contact">
+			     <form role="form" id="contactForm">
+				            <!-- Name -->
+                            <div class="row">
+                                <div class="col-md-6">
+								    <!-- E-Mail -->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+								    <!-- Phone Number -->
+                                    <div class="form-group">
+                                        <input type="email" id="email" class="form-control" placeholder="Email address" required>
+                                    </div>
+                                </div>
+                            </div>
+							<!-- Message Area -->
+                            <div class="form-group">
+                                <textarea class="form-control" id="msg" placeholder="Write you message here..." style="height:232px;" required></textarea>
+                            </div>
+							<!-- Subtmit Button -->
+                            <button type="submit" class="btn btn-send">
+                                Send message
+                            </button>
+                        </form>
+			  </div>
+			</div>
+			<br>
+			<!-- Social Buttons - use font-awesome, past in what you want -->
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="social-buttons">
+                  <li><a href="https://www.facebook.com/hridays" target= "_blank" class="social-btn"><i class="fab fa-facebook-square"></i></a>                  </li><!-- dribble -->
+                  <li><a href="https://www.linkedin.com/in/hridaysur/" target= "_blank" class="social-btn"><i class="fab fa-linkedin"></i></a></li> 
+                  <li><a href="https://bitbucket.org/hridaysur/" target= "_blank" class="social-btn"><i class="fab fa-bitbucket"></i></a></li>
+                  <li><a href="https://twitter.com/Hriday07" target= "_blank" class="social-btn"><i class="fab fa-twitter-square"></i></a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+		<!-- ==========================
+        CONTACT SECTION END
+        =========================== -->
+		
+		
+		
+		<!-- ==========================
+        FOOTER SECTION
+        =========================== -->
+     
+		<!-- ==========================
+        FOOTER SECTION END
+        =========================== -->		
+
+        <!-- Portfolio Modals -->
+
+         <!-- Modal 1 -->
+   
+         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 95vw;">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">YelpCamp on Heroku</h2>
+                    <p class="item-intro text-muted">NodeJS, ExpressJS, MongoDB</p>
+                    <img class="img-fluid d-block mx-auto" src="img/portfolio/campsite.jpeg" alt="">
+                    <h3>Developed YelpCamp Using JavaScript fullstack includes NodeJs, MongoDB, ExpressJs, EJS templetes.
+                        Front-End also includes HTML5, CSS3, Bootstrap, JavaScript. Back-End was supported by NodeJs, MongoDB, ExpressJs, PassportJS, RestAPI.
+                        Used PassportJS & JWT Authentication & secure routing. Used Socket.IO for build Reat-Time notification.Used GoogleAPI to display Camp location.
+                        Deploy & Manage on Heroku. Used Git & BitBucket as version control.</h3>
+                    <ul class="list-inline">
+                      <li>Date: January 2018</li>
+                      <li>Category: Web Development</li>
+                    </ul>
+                    <a class="btn btn-success" type="button" href="https://hridaysur@bitbucket.org/hridaysur/yelpcamp-api" target= "_blank">
+                        <i class="fas fa-code-branch"></i>
+                        Source Code</a>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fas fa-times"></i>
+                      Close Project</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+       <!-- Modal 2 -->
+       <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 95vw;">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">Restaurant Management System</h2>
+                    <p class="item-intro text-muted">Angular 6+, Angular Animations, Firebase</p>
+                    <img class="img-fluid d-block mx-auto thumbnail" src="img/portfolio/restaurant-technology-TEASER.png" alt="">
+                    <p>Developed Single page application using Angular 2+, CSS3, HTML5, Bootstrap.Design & Developed Angular Routes.
+                        Also Includes fetures of Angular 2+ like Observables, Directives, Services & Dependency Injections, Components & Data-bindings,
+                        Template driven as well as reactive approach to angular Forms. HTTP as well HTTPClient Module, Authemtication & Route protection, NgRx.
+                        Also include offline capabilities using service worker to develope progressive web app. Used Angular animation as well as CSS3 animation.</p>
+                    <ul class="list-inline">
+                      <li>Date: May 2018</li>
+                      <li>Category: Web Design, Front-End Development</li>
+                    </ul>
+                    <a class="btn btn-success" type="button" href="https://hridaysur@bitbucket.org/hridaysur/restaurant-management" target= "_blank">
+                        <i class="fas fa-code-branch"></i>
+                        Source Code</a>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fas fa-times"></i>
+                      Close Project</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal 3 -->
+      <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 95vw;">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">Auction System</h2>
+                    <p class="item-intro text-muted">C#, .Net, WebRTC, SignalR, MVC5</p>
+                    <img class="img-fluid d-block mx-auto" src="img/portfolio/e-commerce-platforms.png" alt="">
+                    <p>Design & Developed Auction System on cloud using C#, .net framework. Front-End includes CSHTML, HTML5, CSS, JavaSript, Jquery, SemanticUI.
+                            Along with C#, .net used MVC framework as design architecture. Developed RESTful routes. Used Microsoft SQL server as Database.
+                           Used ADO.net & entity framework to perform database query. Implement Login Logout module as well session & caching.
+                           Used SignalR Library to implement Real-time voice notification.</p>
+                    <ul class="list-inline">
+                      <li>Date: September 2017</li>
+                      <li>Category: Web Development</li>
+                    </ul>
+                    <a class="btn btn-success" type="button" href="https://hridaysur@bitbucket.org/hridaysur/restaurant-management" target= "_blank">
+                        <i class="fas fa-code-branch"></i>
+                        Source Code</a>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fas fa-times"></i>
+                      Close Project</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal 4 -->
+      <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 95vw;">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">Distance-Learning Application</h2>
+                    <p class="item-intro text-muted">C#, .Net, MVC5, WebRTC, SignalR</p>
+                    <img class="img-fluid d-block mx-auto" src="img/portfolio/distance-learning.jpg" alt="">
+                    <p>Design & Developed Distance-Learning using C#, .net framework. Front-End includes CSHTML, HTML5, CSS, JavaSript, Jquery, SemanticUI.
+                            Along with C#, .net used MVC framework as design architecture. Developed RESTful routes. Used Azure CosmosDB as Database.
+                           Used ADO.net & entity framework to perform database query. Implement Login Logout module as well session & caching.
+                           Used SignalR Library to implement Real-time voice notification. WebRTC to implement Real-Time Voice & Video Calling functionality.</p>
+                    <ul class="list-inline">
+                      <li>Date: November 2018</li>
+                      <li>Category: Web Development</li>
+                    </ul>
+                    <a class="btn btn-success" type="button" href="https://hridaysur@bitbucket.org/hridaysur/restaurant-management" target= "_blank">
+                        <i class="fas fa-code-branch"></i>
+                        Source Code</a>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fas fa-times"></i>
+                      Close Project</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal 5 -->
+      <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 95vw;">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">Event Management System</h2>
+                    <p class="item-intro text-muted">NodeJs, GraphQL, MongoDB</p>
+                    <img class="img-fluid d-block mx-auto" src="img/portfolio/event-management.jpeg" alt="">
+                    <p>Project is under construction. Coming Soon!!!</p>
+                    <ul class="list-inline">
+                      <li>Date: January 2019</li>
+                      <li>Category: Web Development</li>
+                    </ul>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fas fa-times"></i>
+                      Close Project</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal 6 -->
+      <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 95vw;">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="mx-auto">
+                  <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2 class="text-uppercase">Personal Portfolio</h2>
+                    <p class="item-intro text-muted">HTML, CSS, JavaScript</p>
+                    <img class="img-fluid d-block mx-auto" src="img/portfolio/DSC_0592.JPG" alt="">
+                    <p>Personal Portfolio Using simple HTML5, CSS, Javascript</p>
+                    <ul class="list-inline">
+                      <li>Date: January 2019</li>
+                      <li>Category: Website Design</li>
+                    </ul>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                      <i class="fas fa-times"></i>
+                      Close Project</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- SmoothScroll -->           
+    <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
+    <!-- Scrollout -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/waypoints.min.js"></script>
+    <!-- classie.js -->
+	<script src="js/classie.js"></script>
+    <!-- FlexSlider -->
+    <script src="assets/flexslider/jquery.flexslider.js"></script>
+	<!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+	<!-- Text Rotator -->
+	<script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
+	<!-- Lightbox.js -->
+    <script src="assets/lightbox/js/lightbox.min.js"></script>
+    <!-- Google Maps --> 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAlAm2U1wolK3HKyrQwwrPpkIGjzVSsbE"></script>
+    <!-- Alertify -->
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/alertify.min.js"></script>
+    <!-- Theme JavaScript Core -->
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
+
+	<!-- GOOGLE MAPS DATA -->
+    <script type="text/javascript">
+    // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+    
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 15,
+                
+                scrollwheel: false,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(45.5017, 73.5673), // New York 
+
+                // How you would like to style the map. 
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [	{		featureType:'water',		stylers:[{color:'#F2F2F2'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#FFFFFF'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#ADADAD'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
+            };
+
+            // Get the HTML DOM element that will contain your map 
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('googlemaps');
+
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+        }
+	
+    </script>
+	
+	<!-- TEXT ROTATOR SETTINGS -->
+    <script type="text/javascript">
+    $(".rotate").textrotator({
+      animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+      speed: 4500 // How many milliseconds until the next word show.
+    });
+    </script>
+    </body>
 </html>
