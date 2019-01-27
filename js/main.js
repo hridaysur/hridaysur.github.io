@@ -110,13 +110,13 @@ Menu
 	})
 
 	var parlx1 = document.querySelectorAll('#parlx1');
-	window.addEventListener('scroll',function(e){
-		var pos = window.pageYOffset;
-		for(var i=0; i< parlx1.length; i++){
-			var rate = pos * parlx1[i].dataset.rate;
-			parlx1[i].style.transform = `translate3d(0px,${rate}px,0px)`;
-		}
-	})
+	// window.addEventListener('scroll',function(e){
+	// 	var pos = window.pageYOffset;
+	// 	for(var i=0; i< parlx1.length; i++){
+	// 		var rate = pos * parlx1[i].dataset.rate;
+	// 		parlx1[i].style.transform = `translate3d(0px,${rate}px,0px)`;
+	// 	}
+	// })
 
 	ScrollOut();
 })();

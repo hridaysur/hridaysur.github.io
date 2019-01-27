@@ -13,7 +13,7 @@
 	<!-- Lightbox -->
 	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
     <!-- Text Rotator-->
-	<link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
+	<link href="css/morphext.css" rel="stylesheet">
 	<!-- FlexSlider -->
     <link href="assets/flexslider/flexslider.css" rel="stylesheet">
     <!-- lineicon -->
@@ -836,7 +836,7 @@
 	<!-- Modernizr -->
     <script src="js/modernizr.js"></script>
 	<!-- Text Rotator -->
-	<script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
+	<script src="js/morphext.min.js"></script>
 	<!-- Lightbox.js -->
     <script src="assets/lightbox/js/lightbox.min.js"></script>
     <!-- Google Maps --> 
@@ -880,12 +880,16 @@
     </script>
 	
 	<!-- TEXT ROTATOR SETTINGS -->
+    <!-- TEXT ROTATOR SETTINGS -->
     <script type="text/javascript">
-    $(".rotate").textrotator({
-      animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-      speed: 4500 // How many milliseconds until the next word show.
-    });
-    </script>
+      $(".rotate").Morphext({
+      // The [in] animation type. Refer to Animate.css for a list of available animations.
+      animation: "fadeIn",
+      // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+      separator: ",",
+      // The delay between the changing of each phrase in milliseconds.
+      speed: 2000
+      });
+      </script>
     </body>
 </html>
