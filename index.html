@@ -44,25 +44,25 @@
         <header id="home">
 		    <!-- creative menu -->
             <div  class="open">
-                    <span class="cls"></span>
-                    <span>
-                        <ul class="sub-menu">
-                            <li>
-                            <a href="index.html#home" onclick="closeMenu()"><i class="fa fa-fw fa-home"></i> Home</a>
-                            </li>
-                            <li>
-                            <a href="index.html#about" onclick="closeMenu()"><i class="fa fa-fw fa-quote-left"></i> About</a>
-                            </li>
-                            <li>
-                            <a href="index.html#service" onclick="closeMenu()"><i class="fa fa-fw fa-globe"></i> Work</a>                            
-                            </li>
-                            <li>
-                            <a href="index.html#contact" onclick="closeMenu()"><i class="far fa-envelope-open"></i> Contact</a>
-                            </li>
-                        </ul>
-                    </span>
-                    <span class="cls"></span>
-                </div>
+              <span class="cls"></span>
+              <span>
+                  <ul class="sub-menu">
+                      <li>
+                      <a href="index.html#home" onclick="closeMenu()"><i class="fa fa-fw fa-home"></i> Home</a>
+                      </li>
+                      <li>
+                      <a href="index.html#about" onclick="closeMenu()"><i class="fa fa-fw fa-quote-left"></i> About</a>
+                      </li>
+                      <li>
+                      <a href="index.html#service" onclick="closeMenu()"><i class="fa fa-fw fa-globe"></i> Work</a>                            
+                      </li>
+                      <li>
+                      <a href="index.html#contact" onclick="closeMenu()"><i class="far fa-envelope-open"></i> Contact</a>
+                      </li>
+                  </ul>
+              </span>
+              <span class="cls"></span>
+          </div>
 		  <!-- Header Image -->
           <section class="hero" id="hero">
             <div class="container">
@@ -73,15 +73,16 @@
                 </div>
               </div>
 			  <!-- HEADER HEADLINE -->
-              <div class="row">
-                <div class="col-md-8 col-md-offset-1 inner">
+              <div class=" hero-grid">
+                <div class="hero-title">
                   <ul class="animated fadeInDown">
                     <li id="parlx1" data-rate="-0.5">I<span style="color:#FFE800">'</span>m<br/></li>  
-                    <li id="parlx1" data-rate="-0.3">H<span style="color:#E04343;">r</span>id<span style="color:#E04343;">a</span>y<br/></li>
+                    <li id="parlx1" class='hriday' data-rate="-0.3">H<span style="color:#E04343;">r</span>id<span style="color:#E04343;">a</span>y<br/></li>
                     <li id="parlx1" data-rate="-0.1"><span>S<span style="color:#FFE800">u</span>r</span></li>
                   </ul><!-- Title -->
-                  <h3 class="animated fadeInUp delay-05s" id="parlx1" data-rate="-0.1"><span class="rotate">Web Developer,Software Developer</span></h3><!-- Text Rotator -->
+                  <h3 class="animated fadeInUp delay-05s" id="parlx1" data-rate="-0.1"><span >Web Developer | Software Developer</span></h3><!-- Text Rotator -->
                 </div>
+                <img class='hriday-image' src="./assets/profile-pic.JPG" alt="Hriday standing">
               </div>
 			  <!-- Learn More Button -->
               <div class="row">
@@ -182,82 +183,110 @@
         </section>
 
         <section class="skill-bars">
-            <div class="container">                
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <div class="skills-left skills" data-scroll>
-                            <h3>Design</h3>
-                            <ul class="skills-ul">
-                                <li>
-                                    <span>Web Design</span>
-                                    <div class="skill-bar-holder">
-                                        <div class="skill-capacity col-xs-9"></div>
-                                    </div>
-                                </li>
-                                
-                                <li>
-                                    <span>Mobile design</span>
-                                    <div class="skill-bar-holder">
-                                        <div class="skill-capacity col-xs-7"></div>
-                                    </div>
-                                </li>
-                                
-                                <li>
-                                    <span>Branding &amp; Identity</span>
-                                    <div class="skill-bar-holder">
-                                        <div class="skill-capacity col-xs-7"></div>
-                                    </div>
-                                </li>
-                                
-                                <li>
-                                    <span>Photoshop &amp; Illustrator</span>
-                                    <div class="skill-bar-holder">
-                                        <div class="skill-capacity col-xs-6"></div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6 col-sm-12">
-                        <div class="skills-right skills" data-scroll>
-                            <h3 id="developing">Developing</h3>
-                            <ul class="skills-ul">
-                                    <li>
-                                        <span>NodeJS/ ExpressJS/ MongoDB</span>
-                                        <div class="skill-bar-holder">
-                                            <div class="skill-capacity col-xs-11"></div>
-                                        </div>
-                                    </li>
-                                        
-                                    <li>
-                                        <span>C# &amp; .Net Core</span>
-                                        <div class="skill-bar-holder">
-                                            <div class="skill-capacity col-xs-9"></div>
-                                        </div>
-                                    </li>
-                                <li>
-                                    <span>HTML &amp; CSS3</span>
-                                    <div class="skill-bar-holder">
-                                        <div class="skill-capacity col-xs-8"></div>
-                                    </div>
-                                </li>
-                                
-                                <li>
-                                    <span>Javascript/ Angular 6/ ReactJS</span>
-                                    <div class="skill-bar-holder">
-                                        <div class="skill-capacity col-xs-9"></div>
-                                    </div>
-                                </li>
-                                
-                               
-                            </ul>
-                        </div>
+          <div class="container">                
+            <!-- <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="skills-left skills" data-scroll>
+                        <h3>Design</h3>
+                        <ul class="skills-ul">
+                            <li>
+                                <span>Web Design</span>
+                                <div class="skill-bar-holder">
+                                    <div class="skill-capacity col-xs-9"></div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <span>Mobile design</span>
+                                <div class="skill-bar-holder">
+                                    <div class="skill-capacity col-xs-7"></div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <span>Branding &amp; Identity</span>
+                                <div class="skill-bar-holder">
+                                    <div class="skill-capacity col-xs-7"></div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <span>Photoshop &amp; Illustrator</span>
+                                <div class="skill-bar-holder">
+                                    <div class="skill-capacity col-xs-6"></div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 
-    
+                <div class="col-md-6 col-sm-12">
+                    <div class="skills-right skills" data-scroll>
+                        <h3 id="developing">Developing</h3>
+                        <ul class="skills-ul">
+                                <li>
+                                    <span>NodeJS/ ExpressJS/ MongoDB</span>
+                                    <div class="skill-bar-holder">
+                                        <div class="skill-capacity col-xs-11"></div>
+                                    </div>
+                                </li>
+                                    
+                                <li>
+                                    <span>C# &amp; .Net Core</span>
+                                    <div class="skill-bar-holder">
+                                        <div class="skill-capacity col-xs-9"></div>
+                                    </div>
+                                </li>
+                            <li>
+                                <span>HTML &amp; CSS3</span>
+                                <div class="skill-bar-holder">
+                                    <div class="skill-capacity col-xs-8"></div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <span>Javascript/ Angular 6/ ReactJS</span>
+                                <div class="skill-bar-holder">
+                                    <div class="skill-capacity col-xs-9"></div>
+                                </div>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            
+            <div class="row swag text-center">
+              <h1 class="arrow">
+                Technologies <span>I use</span>
+              </h1>
             </div>
+
+            <div class="technologies">
+              <div class="technology">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" alt="">
+              </div>
+              <div class="technology">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/.NET_Logo.svg" alt="">
+              </div><div class="technology">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" alt="">
+              </div><div class="technology">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="">
+              </div><div class="technology">
+                <img src="https://webassets.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png" alt="">
+              </div><div class="technology">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" alt="">
+              </div>
+              <div class="technology">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png" alt="">
+              </div>
+              <div class="technology">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="">
+              </div>
+            </div>
+
+          </div>
         </section>
 
 
@@ -540,31 +569,31 @@
 			  <!-- Contact Form -->
 			  <div class="col-md-6 contact">
 			     <form role="form" id="contactForm">
-				            <!-- Name -->
-                            <div class="row">
-                                <div class="col-md-6">
-								    <!-- E-Mail -->
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your name" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-								    <!-- Phone Number -->
-                                    <div class="form-group">
-                                        <input type="email" id="email" class="form-control" placeholder="Email address" required>
-                                    </div>
-                                </div>
-                            </div>
-							<!-- Message Area -->
-                            <div class="form-group">
-                                <textarea class="form-control" id="msg" placeholder="Write you message here..." style="height:232px;" required></textarea>
-                            </div>
-							<!-- Subtmit Button -->
-                            <button type="submit" class="btn btn-send">
-                                Send message
-                            </button>
-                        </form>
-			  </div>
+              <!-- Name -->
+              <div class="row">
+                  <div class="col-md-6">
+                      <!-- E-Mail -->
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <!-- Phone Number -->
+                      <div class="form-group">
+                          <input type="email" id="email" class="form-control" placeholder="Email address" required>
+                      </div>
+                  </div>
+              </div>
+              <!-- Message Area -->
+              <div class="form-group">
+                  <textarea class="form-control" id="msg" placeholder="Write you message here..." style="height:232px;" required></textarea>
+              </div>
+              <!-- Subtmit Button -->
+              <button type="submit" class="btn btn-send">
+                  Send message
+              </button>
+            </form>
+        </div>
 			</div>
 			<br>
 			<!-- Social Buttons - use font-awesome, past in what you want -->
