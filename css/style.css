@@ -1363,6 +1363,30 @@ ul.slides li {
   left: auto;
   right: 0px;
 }
+
+.technologies {
+  margin: 0 auto;
+  max-width: 860px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.technology {
+  height: 200px;
+  width: 200px;
+  background: #ffe800;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 20px; */
+}
+
+.technology img {
+  width: 100px;
+}
+
 @media screen and (max-width: 990px) {
   .skills-left {
     margin-bottom: 32px;
