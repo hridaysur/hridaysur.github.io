@@ -396,7 +396,7 @@ table {
   font-size: 1.3rem;
   display: flex;
   justify-content: center;
-  background: #fff;
+  /* background: #fff; */
   z-index: 99;
 }
 .open span ul {
@@ -1234,6 +1234,10 @@ ul.slides li {
 }
 
 @media screen and (max-width: 767px) {
+  .hero {
+    height: unset;
+  }
+
   .hero ul {
     text-align: left;
   }
@@ -1380,6 +1384,7 @@ ul.slides li {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-self: center;
   /* margin-bottom: 20px; */
 }
 
