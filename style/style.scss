@@ -213,8 +213,11 @@ header .container {
 .photo {
   background: $color-dark;
   box-shadow: 0 0 10000px $color-accent;
+  border-radius: 5px;
+  transition: all ease-in-out $transition;
   img {
     max-width: 300px;
+    border-radius: 5px 5px 0 0;
   }
   .intro-card {
     padding: 1rem 1.5rem;
