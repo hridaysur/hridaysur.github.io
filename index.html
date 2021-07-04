@@ -1,928 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Website Title -->
-    <title>Hriday Sur</title>
-    <!-- Bootstrap -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Font-Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<!-- Lightbox -->
-	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
-    <!-- Text Rotator-->
-	<link href="css/morphext.css" rel="stylesheet">
-	<!-- FlexSlider -->
-    <link href="assets/flexslider/flexslider.css" rel="stylesheet">
-    <!-- lineicon -->
-    <link href="css/lineicon.mini.css" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/alertify.min.css"/>
-    <!-- Theme Style -->
-    <link href="css/style.css" rel="stylesheet">
-	<!-- Animations -->
-    <link href="css/animate.css" rel="stylesheet">
-	<!-- Custom Favicon -->
-	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="assets/html5shiv/html5shiv.js"></script>
-    <script src="assets/respond/respond.min.js"></script>
-    <![endif]-->
-  </head>
-    <body id="top">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/dd4ae78545.js" crossorigin="anonymous"></script>
+    <title>Hriday Sur - Web Developer | Software Developer</title>
+</head>
+<body>
 
-      <!-- ****************************** Preloader ************************** -->
-      <div id="preloader"></div>
+    <!-- ==================== Header ==================== -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html"><h1 class=logo>Hriday <span>Sur</span></h1></a>
+                    <ul class="nav-menu">
+                        <li><a class="nav-link" href="#home">Home</a></li>
+                        <li><a class="nav-link" href="#about">About</a></li>
+                        <li><a class="nav-link" href="#work">Work</a></li>
+                        <li><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                    <!-- <ul class="social-links">
+                        <li><a class="social-link" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a class="social-link" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="social-link" href="#"><i class="fab fa-github"></i></a></li>
+                    </ul> -->
+                <div class="hamburger">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ==================== Header ==================== -->
 
-	  	<!-- ==========================
-        HEADER SECTION 
-        =========================== -->
-        <header id="home">
-		    <!-- creative menu -->
-            <div  class="open">
-              <span class="cls"></span>
-              <span>
-                  <ul class="sub-menu">
-                      <li>
-                      <a href="index.html#home" onclick="closeMenu()"><i class="fa fa-fw fa-home"></i> Home</a>
-                      </li>
-                      <li>
-                      <a href="index.html#about" onclick="closeMenu()"><i class="fa fa-fw fa-quote-left"></i> About</a>
-                      </li>
-                      <li>
-                      <a href="index.html#service" onclick="closeMenu()"><i class="fa fa-fw fa-globe"></i> Work</a>                            
-                      </li>
-                      <li>
-                      <a href="index.html#contact" onclick="closeMenu()"><i class="far fa-envelope-open"></i> Contact</a>
-                      </li>
-                  </ul>
-              </span>
-              <span class="cls"></span>
-          </div>
-		  <!-- Header Image -->
-          <section class="hero" id="hero">
-            <div class="container">
-			  <!-- Slider Button (don't edit!)-->
-              <div class="row">
-                <div class="col-md-12 text-right navicon">
-                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+    <!-- ==================== Home ==================== -->
+    <section id="home" class='s1'>
+        <div class="container">
+            <div class="home-wrapper wrapper">
+                <div class="intro">
+                    <div class="heading">
+                        <h5><span>Full-stack Developer</span></h5>
+                    </div>
+                    <h1>hi, I'm <br> <li class='hriday'>Hriday</li> Sur</h1>
+                    <p>Web Developer | Software Developer</p>
+                    <a href="#">Let's chat!</a>
                 </div>
-              </div>
-			  <!-- HEADER HEADLINE -->
-              <div class=" hero-grid">
-                <div class="hero-title">
-                  <ul class="animated fadeInDown">
-                    <li id="parlx1" data-rate="-0.5">I<span style="color:#FFE800">'</span>m<br/></li>  
-                    <li id="parlx1" class='hriday' data-rate="-0.3">H<span style="color:#E04343;">r</span>id<span style="color:#E04343;">a</span>y<br/></li>
-                    <li id="parlx1" data-rate="-0.1"><span>S<span style="color:#FFE800">u</span>r</span></li>
-                  </ul><!-- Title -->
-                  <h3 class="animated fadeInUp delay-05s" id="parlx1" data-rate="-0.1"><span >Web Developer | Software Developer</span></h3><!-- Text Rotator -->
+
+                <div class="photo">
+                    <img src="./assets/profile-pic.JPG" alt="Hriday Sur">
+                    <div class="intro-card">
+                        <h3>Software Engineer</h3>
+                        <p>at Amazon.com,</p>
+                        <p>2021-Present</p>
+                    </div>
                 </div>
-                <img class='hriday-image' src="./assets/profile-pic.JPG" alt="Hriday standing">
-              </div>
-			  <!-- Learn More Button -->
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                  <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
-			            <p>SEE MORE</p>
-			            <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
-			        </a>
-                </div>
-              </div>
             </div>
-          </section>
-		  <!-- Header Image End -->
-        </header>
-		<!-- ==========================
-        HEADER SECTION END  
-        =========================== -->
-		
-		
-		
-		
-		<!-- ==========================
-        ABOUT SECTION  
-        =========================== -->
-        <section class="intro text-center section-padding color-bg" id="about">
-          <div class="container">
-		    <!-- WELCOME TEXT -->
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2 aboutMe" data-scroll>
-                <h1 class="arrow">A little <span>about</span> me</h1><!-- Headline -->
-				<!-- about / welcome text -->
-                <p> I am a freelance Full-stack developer who loves to code & write application to build great products & help business succeed with there goals. My work is something I do with a lot of honesty, appetite and commitment. In my spare time you will my find me exploring & traveling new places. Appart from that I love playing chess.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-
-
-<!-- ==========================
-        SERVICE SECTION 
-        =========================== -->
-        <section class="features text-center section-padding" id="service">
-          <div class="container">
-        <!-- Headline -->
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">I do amazing things for clients</h1>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-          <div class="services">
-          <!-- Service Box 1 -->
-                  <div class="col-md-4 wp2 item">
-                    <div class="icon">
-                      <i class="fa fa-code"></i><!-- Icon -->
-                    </div>
-                    <h2>Development</h2><!-- Title -->
-                    <p>Front & Back end Development is one of the thing that I am passionate about. Using React/Redux, Angular 2+, NodeJS, C#, SQL, No-SQL, I built servers, API's, Secure & Authenticated Applications.</p>
-                    <!--Description -->
-                  </div>
-          <!-- Service Box 2 -->
-                  <div class="col-md-4 wp2 item delay-05s">
-                    <div class="icon">
-                      <i class="fa fa-desktop"></i><!-- Icon -->
-                    </div>
-                    <h2>Design</h2><!-- Title -->
-                    <p>Web/Application is building out the visual components of a website. Using HTML, CSS , and Javascript, I build fast, interactive websites. This includes Web Design, UI & UX.</p><!--Description -->
-                  </div>
-          <!-- Service Box 3 -->
-                  <div class="col-md-4 wp2 item delay-1s">
-                    <div class="icon">
-                        <i class="far fa-lightbulb"></i><!-- Icon -->
-                    </div>
-                    <h2>Branding & Logo Design</h2><!-- Title -->
-                    <p>While most of my attention is on interactive projects, I do branding and collateral from time to time. This includes logo design, business cards, and other printed materials.</p><!--Description -->
-                  </div>
-          </div>
-                  <div class="clearfix"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="intro text-center section-padding color-bg" id="about">
-                <div class="container">
-                  <!-- WELCOME TEXT -->
-                  <div class="row">
-                    <div class="col-md-8 col-md-offset-2 aboutMe" data-scroll>
-                      <h1 class="arrow">Here's a <span>couple of things</span> I am good at</h1><!-- Headline -->
-                      <!-- about / welcome text -->
-                      <p> Hard-working web developer with a flair for creating elegant solutions in the least amount of time. I understand the challenges of working remotely. I realize the importance of good <span style="color:#FFE800">communication</span>. I use tools like slack to make sure we are on a same page. I believe it’s important to stay <spna style="color:#FFE800">organised</spna> while working remotely. I use the likes of Trello & Basecamp to help keep projects on-track and under control.I value my <span style="color:#FFE800">clients’ time</span> and always aim to work efficiently. I account for and track everything I do using services such as Toggl.</p>
-                    </div>
-                  </div>
-                </div>
-        </section>
-
-        <section class="skill-bars">
-          <div class="container">                
-            <!-- <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <div class="skills-left skills" data-scroll>
-                        <h3>Design</h3>
-                        <ul class="skills-ul">
-                            <li>
-                                <span>Web Design</span>
-                                <div class="skill-bar-holder">
-                                    <div class="skill-capacity col-xs-9"></div>
-                                </div>
-                            </li>
-                            
-                            <li>
-                                <span>Mobile design</span>
-                                <div class="skill-bar-holder">
-                                    <div class="skill-capacity col-xs-7"></div>
-                                </div>
-                            </li>
-                            
-                            <li>
-                                <span>Branding &amp; Identity</span>
-                                <div class="skill-bar-holder">
-                                    <div class="skill-capacity col-xs-7"></div>
-                                </div>
-                            </li>
-                            
-                            <li>
-                                <span>Photoshop &amp; Illustrator</span>
-                                <div class="skill-bar-holder">
-                                    <div class="skill-capacity col-xs-6"></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-sm-12">
-                    <div class="skills-right skills" data-scroll>
-                        <h3 id="developing">Developing</h3>
-                        <ul class="skills-ul">
-                                <li>
-                                    <span>NodeJS/ ExpressJS/ MongoDB</span>
-                                    <div class="skill-bar-holder">
-                                        <div class="skill-capacity col-xs-11"></div>
-                                    </div>
-                                </li>
-                                    
-                                <li>
-                                    <span>C# &amp; .Net Core</span>
-                                    <div class="skill-bar-holder">
-                                        <div class="skill-capacity col-xs-9"></div>
-                                    </div>
-                                </li>
-                            <li>
-                                <span>HTML &amp; CSS3</span>
-                                <div class="skill-bar-holder">
-                                    <div class="skill-capacity col-xs-8"></div>
-                                </div>
-                            </li>
-                            
-                            <li>
-                                <span>Javascript/ Angular 6/ ReactJS</span>
-                                <div class="skill-bar-holder">
-                                    <div class="skill-capacity col-xs-9"></div>
-                                </div>
-                            </li>
-                            
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
             
-            <div class="row swag text-center">
-              <h1 class="arrow">
-                Technologies <span>I use</span>
-              </h1>
+        </div>
+
+    </section>
+    <!-- ==================== Home ==================== -->
+
+    <!-- ==================== About ==================== -->
+    <section id="about" class='s2'>
+        <div class="container">
+            <div class="about-wrapper wrapper">
+                <div class="heading">
+                    <h5><span>About Me</span></h5>
+                </div>
+                <h3>Freelance Full-stack Developer</h3>
+                <p>...who loves to code & write applications to build great products & help business succeed with their goals. My work is something I do with a lot of honesty, appetite and commitment. In my spare time you will find me exploring & traveling new places. Appart from that I love playing chess ♟.</p>
             </div>
-
-            <div class="technologies">
-              <div class="technology">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/C-Sharp.png" alt="">
-              </div>
-              <div class="technology">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/.NET_Logo.svg" alt="">
-              </div><div class="technology">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" alt="">
-              </div><div class="technology">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="">
-              </div><div class="technology">
-                <img src="https://webassets.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png" alt="">
-              </div>
-              <div class="technology">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" alt="">
-              </div>
-              <div class="technology">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="">
-              </div>
-              <div class="technology">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/HTML5_logo_resized.svg/1200px-HTML5_logo_resized.svg.png" alt="">
-              </div>
-              <div class="technology">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="">
-              </div>
+    <!-- ==================== Clients ==================== -->
+            <div class="clients-wrapper wrapper">
+                <div class="heading">
+                    <h5><span>I do amazing things for CLIENTS</span></h5>
+                </div>
+                <div class="client-cards">
+                    <div class="client-card">
+                        <div class="left">
+                            <h3>BRANDING & LOGO DESIGN</h3>
+                            <p>While most of my attention is on interactive projects, I do branding and collateral from time to time. This includes logo design, business cards, and other printed materials.</p>
+                        </div>
+                        <div class="right">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="left">
+                            <h3>DESIGN</h3>
+                            <p>Web/Application is building out the visual components of a website. Using HTML, CSS , and Javascript, I build fast, interactive websites. This includes Web Design, UI & UX.</p>
+                        </div>
+                        <div class="right">
+                            <i class="far fa-object-group"></i>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="left">
+                            <h3>DEVELOPMENT</h3>
+                            <p>Front & Back end Development is one of the thing that I am passionate about. Using React/Redux, Angular 2+, NodeJS, C#, SQL, No-SQL, I built servers, API's, Secure & Authenticated Applications.</p>
+                        </div>
+                        <div class="right">
+                            <i class="fas fa-file-code"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
+    <!-- ==================== Clients ==================== -->
+        </div>
+    </section>
+    <!-- ==================== About ==================== -->
 
-          </div>
-        </section>
-
-
-		<!-- ==========================
-        ABOUT SECTION END
-        =========================== -->	
-
-		
-		
-		
-		<!-- ==========================
-        PORTFOLIO SECTION
-    =========================== -->
-        <section class="swag text-center" id="portfolio">
-          <div class="container">
-		    <!-- Headline -->
-            <div class="row">
-              <h1 class="arrow">
-                Recent <span>Projects</span>
-              </h1>
-            </div>
-          </div>
-        </section>
-
-        <div class="bg-light" id="portfolio1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                      <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal1">
-                        <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                            <i class="fas fa-plus fa-3x"></i>
-                          </div>
-                        </div>
-                        <img class="img-fluid portfolio-img" src="img/portfolio/campsite.jpeg" alt="">
-                      </a>
-                      <div class="portfolio-caption">
-                        <h3>YelpCamp on Heroku</h3>
-                        <p class="text-muted">Web Development</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                      <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal2">
-                        <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                            <i class="fas fa-plus fa-3x"></i>
-                          </div>
-                        </div>
-                        <img class="img-fluid portfolio-img" src="img/portfolio/restaurant-technology-TEASER.png" alt="">
-                      </a>
-                      <div class="portfolio-caption">
-                        <h3>Restaurant Management System</h3>
-                        <p class="text-muted">Front-End Development</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                      <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal3">
-                        <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                            <i class="fas fa-plus fa-3x"></i>
-                          </div>
-                        </div>
-                        <img class="img-fluid portfolio-img" src="img/portfolio/e-commerce-platforms.png" alt="">
-                      </a>
-                      <div class="portfolio-caption">
-                        <h3>Auction System</h3>
-                        <p class="text-muted">Web Development, E-Commerce</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                      <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal4">
-                        <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                            <i class="fas fa-plus fa-3x"></i>
-                          </div>
-                        </div>
-                        <img class="img-fluid portfolio-img" src="img/portfolio/distance-learning.jpg" alt="">
-                      </a>
-                      <div class="portfolio-caption">
-                        <h3>Distance-Learning</h3>
-                        <p class="text-muted">Web Development</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                      <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal5">
-                        <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                            <i class="fas fa-plus fa-3x"></i>
-                          </div>
-                        </div>
-                        <img class="img-fluid portfolio-img" src="img/portfolio/event-management.jpeg" alt="">
-                      </a>
-                      <div class="portfolio-caption">
-                        <h3>Event Management</h3>
-                        <p class="text-muted">Web Development</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 portfolio-item">
-                      <a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal6">
-                        <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                            <i class="fas fa-plus fa-3x"></i>
-                          </div>
-                        </div>
-                        <img class="img-fluid portfolio-img" src="img/portfolio/DSC_0592.JPG" alt="">
-                      </a>
-                      <div class="portfolio-caption">
-                        <h3>Portfolio</h3>
-                        <p class="text-muted">Website Design</p>
-                      </div>
-                    </div>
-                  </div><!--/row-->
+    <!-- ==================== Good At ==================== -->
+    <section id="" class='s1'>
+        <div class="container">
+            <div class="good-wrapper wrapper">
+                <div class="heading">
+                    <h5><span>HERE'S A COUPLE OF THINGS I AM GOOD AT</span></h5>
+                </div>
+                <h3>Hard-working web developer</h3>
+                <p>...with a flair for creating elegant solutions in the least amount of time. I understand the challenges of working remotely. I realize the importance of good communication. I use tools like slack to make sure we are on a same page. I believe it’s important to stay organised while working remotely. I use the likes of Trello & Basecamp to help keep projects on-track and under control. I value my clients’ time and always aim to work efficiently. I account for and track everything I do using services such as Toggl.</p>
             </div>
         </div>
-        <!--/.container-->
+    </section>
+    <!-- ==================== Good At ==================== -->
 
-        
-  
-     
-		<!-- ==========================
-        PORTFOLIO SECTION END
-        =========================== -->
-			
-
-
-			
-		<!-- ==========================
-        CUSTOM SPACER
-        =========================== -->
-		<div class="spacer-cta text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <a href="index.html#contact" class="outline-btn">Contact Me</a>
-              </div>
+    <!-- ==================== Technologies ==================== -->
+    <section id="" class='s1'>
+        <div class="container">
+            <div class="technologies-wrapper wrapper">
+                <div class="heading">
+                    <h5><span>TECHNOLOGIES I USE</span></h5>
+                </div>
+                <div class="technologies">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" data-name="Layer 1" viewBox="0 0 48 48"><path fill="#78797d" d="M42.91,10.92l-17-9.84a3.77,3.77,0,0,0-3.76,0l-17,9.84a3.75,3.75,0,0,0-1.87,3.25V33.83a3.75,3.75,0,0,0,1.87,3.25l17,9.84a3.77,3.77,0,0,0,3.76,0l17-9.84a3.75,3.75,0,0,0,1.87-3.25V14.17A3.75,3.75,0,0,0,42.91,10.92ZM23.7,37.15c-8.55,0-12.94-5.44-12.94-13s5-13.38,13.3-13.38c9.26,0,11.84,6.1,12,9H28.62c-.46-2.06-1.73-3.49-4.7-3.49-3.48,0-5.45,2.8-5.45,7.69,0,5.37,2.09,7.82,5.42,7.82a4.62,4.62,0,0,0,4.69-3.32h7.47C35.1,32.62,31.88,37.15,23.7,37.15Zm17.42-14h-1l-.3,1.23h.81v1.11H39.57l-.43,1.79h-1l.44-1.79H37.47L37,27.24H36l.44-1.79h-.78V24.34h1.06L37,23.11h-.85V22h1.12l.41-1.65h1L38.31,22h1.11l.4-1.65h1L40.41,22h.72Z"/><polygon points="37.74 24.34 38.84 24.34 39.14 23.11 38.04 23.11 37.74 24.34"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#78797d" d="M112.678 30.334l-44.143-25.605c-2.781-1.584-6.424-1.584-9.227 0l-44.488 25.605c-2.869 1.651-4.82 4.754-4.82 8.073v51.142c0 3.319 1.992 6.423 4.862 8.083l11.729 6.688c5.627 2.772 7.186 2.772 9.746 2.772 8.334 0 12.662-5.039 12.662-13.828v-50.49c.001-.713.446-1.774-.255-1.774h-5.622c-.712 0-2.122 1.061-2.122 1.773v50.49c0 3.896-3.616 7.773-10.202 4.48l-12.122-7.013c-.422-.23-.676-.693-.676-1.181v-51.142c0-.482.463-.966.891-1.213l44.378-25.561c.415-.235 1.002-.235 1.415 0l43.963 25.555c.421.253.354.722.354 1.219v51.142c0 .488.092.963-.323 1.198l-44.133 25.576c-.378.227-.87.227-1.285 0l-11.317-6.749c-.341-.198-.752-.269-1.08-.086-3.145 1.783-3.729 2.02-6.679 3.043-.727.253-1.799.692.408 1.929l14.798 8.754c1.416.82 3.027 1.246 4.647 1.246 1.642 0 3.249-.426 4.666-1.246l43.976-25.582c2.871-1.672 4.322-4.764 4.322-8.083v-51.142c-.001-3.319-1.452-6.414-4.323-8.073zM77.727 81.445c-11.727 0-14.309-3.235-15.17-9.066-.102-.628-.634-1.379-1.274-1.379h-5.73c-.709 0-1.28.86-1.28 1.566 0 7.466 4.06 16.512 23.454 16.512 14.038 0 22.088-5.455 22.088-15.109 0-9.572-6.467-12.084-20.082-13.886-13.762-1.819-15.16-2.738-15.16-5.962 0-2.658 1.184-6.203 11.374-6.203 9.104 0 12.46 1.954 13.841 8.091.119.577.646.991 1.241.991h5.754c.354 0 .691-.143.939-.396.241-.272.367-.613.336-.979-.893-10.569-7.913-15.494-22.112-15.494-12.632 0-20.166 5.334-20.166 14.275 0 9.698 7.497 12.378 19.622 13.577 14.505 1.422 15.633 3.542 15.633 6.395 0 4.956-3.978 7.067-13.308 7.067z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#78797d" d="M126.67 98.44c-4.56 1.16-7.38.05-9.91-3.75-5.68-8.51-11.95-16.63-18-24.9-.78-1.07-1.59-2.12-2.6-3.45C89 76 81.85 85.2 75.14 94.77c-2.4 3.42-4.92 4.91-9.4 3.7L92.66 62.34 67.6 29.71c4.31-.84 7.29-.41 9.93 3.45 5.83 8.52 12.26 16.63 18.67 25.21C102.65 49.82 109 41.7 115 33.26c2.41-3.42 5-4.72 9.33-3.46-3.28 4.35-6.49 8.63-9.72 12.88-4.36 5.73-8.64 11.53-13.16 17.14-1.61 2-1.35 3.3.09 5.19C109.9 76 118.16 87.1 126.67 98.44zM1.33 61.74c.72-3.61 1.2-7.29 2.2-10.83 6-21.43 30.6-30.34 47.5-17.06C60.93 41.64 63.39 52.62 62.9 65H7.1c-.84 22.21 15.15 35.62 35.53 28.78 7.15-2.4 11.36-8 13.47-15 1.07-3.51 2.84-4.06 6.14-3.06-1.69 8.76-5.52 16.08-13.52 20.66-12 6.86-29.13 4.64-38.14-4.89C5.26 85.89 3 78.92 2 71.39c-.15-1.2-.46-2.38-.7-3.57Q1.33 64.78 1.33 61.74zM7.2 60.25H57.63c-.33-16.06-10.33-27.47-24-27.57C18.63 32.56 7.85 43.7 7.2 60.25z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="713" viewBox="0 0 512 146"><g fill="78797d" fill-rule="evenodd"><path fill="#78797d" d="M476.713 60.463c-.46.092-.922 1.107-.922 1.66-.092 3.692-.184 13.474-.184 20.118 0 .185.276.554.553.554 1.384.092 4.706.184 7.567.184 3.968 0 6.275-.553 7.568-1.106 3.321-1.662 4.89-5.261 4.89-9.23 0-8.95-6.275-12.365-15.596-12.365-.646-.092-2.49-.092-3.876.185zm23.81 41.25c0-9.136-6.737-14.212-18.918-14.212-.554 0-4.43-.092-5.353.092-.277.093-.645.278-.645.555 0 6.551-.093 16.98.184 21.04.184 1.753 1.477 4.245 3.046 4.983 1.66.923 5.444 1.107 8.028 1.107 7.29 0 13.658-4.06 13.658-13.565zm-42.634-46.325c.922 0 3.69.276 10.796.276 6.737 0 12.089-.184 18.641-.184 8.028 0 19.102 2.86 19.102 14.857 0 5.906-4.153 10.613-9.597 12.92-.276.092-.276.276 0 .368 7.751 1.939 14.581 6.737 14.581 15.78 0 8.86-5.537 14.489-13.566 17.996-4.891 2.122-10.981 2.86-17.164 2.86-4.707 0-17.349-.553-24.362-.368-.738-.278.646-3.6 1.291-4.153 1.662-.093 2.953-.185 4.707-.739 2.492-.645 2.768-1.384 3.137-5.167.185-3.23.185-14.674.185-22.794 0-11.166.093-18.733 0-22.424-.092-2.86-1.107-3.784-3.137-4.338-1.57-.276-4.153-.646-6.276-.922-.462-.462 1.107-3.6 1.662-3.968zm-53.248 57.399c2.216 1.752 6.553 2.49 10.429 2.49 4.983 0 9.966-.921 14.765-5.26 4.891-4.428 8.305-11.257 8.305-22.146 0-10.429-3.968-18.919-12.089-23.901-4.614-2.862-10.52-4.06-17.349-4.06-2.03 0-3.968.092-5.167.645-.278.185-.923 1.015-.923 1.476-.185 1.846-.185 16.057-.185 24.363 0 8.582 0 20.579.185 21.963 0 1.385.645 3.507 2.03 4.43zm-20.948-57.4c1.754 0 8.49.277 11.72.277 5.815 0 9.967-.276 20.948-.276 9.228 0 16.98 2.491 22.517 7.197 6.736 5.814 10.244 13.843 10.244 23.624 0 13.935-6.368 21.964-12.736 26.578-6.366 4.706-14.672 7.474-26.484 7.474-6.275 0-17.072-.184-26.024-.277h-.092c-.461-.83.738-4.06 1.476-4.152 2.4-.277 3.046-.37 4.246-.83 1.937-.739 2.307-1.754 2.584-5.168.276-6.368.184-14.027.184-22.702 0-6.182.092-18.272-.093-22.148-.276-3.229-1.66-4.06-4.429-4.614-1.384-.276-3.23-.646-5.813-.922-.37-.647 1.291-3.507 1.752-4.06z"/><path fill="#78797d" d="M272.033 116.385c-2.307-.277-3.968-.645-5.998-1.568-.277-.185-.739-1.107-.739-1.477-.184-3.23-.184-12.458-.184-18.64 0-4.984-.83-9.321-2.953-12.366-2.492-3.508-6.09-5.537-10.705-5.537-4.06 0-9.505 2.768-14.027 6.644-.092.092-.83.739-.738-.277 0-1.015.185-3.045.277-4.43.093-1.292-.646-1.937-.646-1.937-2.953 1.476-11.258 3.414-14.304 3.69-2.214.463-2.768 2.585-.46 3.323h.092c2.49.738 4.152 1.569 5.443 2.4.923.738.831 1.753.831 2.584.092 6.92.092 17.533-.184 23.347-.092 2.307-.738 3.137-2.4 3.506l.185-.092c-1.292.277-2.307.553-3.876.738-.554.554-.554 3.507 0 4.153 1.015 0 6.367-.277 10.798-.277 6.09 0 9.228.277 10.796.277.646-.738.831-3.507.462-4.153-1.754-.092-3.046-.276-4.245-.646-1.661-.37-2.123-1.199-2.216-3.137-.183-4.892-.183-15.227-.183-22.24 0-1.938.553-2.861 1.106-3.415 2.123-1.845 5.538-3.137 8.583-3.137 2.953 0 4.89.923 6.367 2.123 2.03 1.66 2.676 4.06 2.953 5.813.461 3.968.277 11.812.277 18.641 0 3.691-.277 4.614-1.66 5.075-.647.277-2.308.647-4.246.83-.646.647-.461 3.508 0 4.154 2.676 0 5.814-.277 10.428-.277 5.721 0 9.413.277 10.89.277.46-.554.645-3.23.276-3.969zm25.562-35.25c-4.89 0-7.936 3.783-7.936 9.688 0 5.999 2.676 12.92 10.243 12.92 1.292 0 3.692-.554 4.798-1.846 1.754-1.66 2.954-4.983 2.954-8.49 0-7.659-3.784-12.273-10.059-12.273zm-.646 40.787c-1.845 0-3.138.554-3.968 1.016-3.876 2.49-5.629 4.89-5.629 7.752 0 2.675 1.015 4.797 3.23 6.643 2.676 2.307 6.367 3.415 11.073 3.415 9.413 0 13.566-5.076 13.566-10.058 0-3.508-1.754-5.815-5.352-7.106-2.584-1.108-7.29-1.662-12.92-1.662zm.646 23.994c-5.629 0-9.69-1.2-13.196-3.876-3.415-2.584-4.891-6.46-4.891-9.136 0-.738.185-2.769 1.846-4.614 1.014-1.108 3.23-3.23 8.49-6.829.184-.092.276-.184.276-.37 0-.184-.185-.369-.369-.46-4.337-1.661-5.629-4.338-5.999-5.814v-.185c-.091-.554-.276-1.107.555-1.661.646-.461 1.569-1.015 2.583-1.66 1.569-.924 3.23-1.939 4.245-2.77.185-.184.185-.368.185-.553 0-.185-.185-.37-.37-.461-6.458-2.123-9.688-6.922-9.688-14.12 0-4.706 2.122-8.951 5.905-11.627 2.584-2.03 9.044-4.522 13.289-4.522h.277c4.337.092 6.736 1.015 10.15 2.215 1.846.646 3.6.922 6 .922 3.598 0 5.167-1.107 6.458-2.398.093.184.278.646.37 1.845.092 1.2-.277 2.953-1.2 4.245-.738 1.015-2.399 1.754-4.06 1.754h-.462c-1.661-.185-2.4-.37-2.4-.37l-.368.185c-.092.185 0 .369.092.646l.093.185c.184.83.553 3.321.553 3.968 0 7.567-3.045 10.888-6.275 13.38-3.138 2.307-6.736 3.783-10.797 4.153-.092 0-.46 0-1.292.092-.461 0-1.107.093-1.2.093h-.092c-.738.184-2.583 1.107-2.583 2.675 0 1.384.83 3.046 4.798 3.323.83.092 1.66.092 2.584.185 5.26.368 11.812.83 14.857 1.845 4.245 1.568 6.921 5.352 6.921 9.874 0 6.83-4.89 13.197-13.011 17.164-3.968 1.754-7.937 2.677-12.274 2.677zm52.6-64.32c-1.937 0-3.691.46-4.983 1.383-3.598 2.215-5.444 6.645-5.444 13.104 0 12.09 6.09 20.58 14.765 20.58 2.584 0 4.614-.739 6.367-2.215 2.676-2.216 4.061-6.645 4.061-12.828 0-11.996-5.999-20.025-14.765-20.025zm1.662 39.496c-15.688 0-21.317-11.535-21.317-22.332 0-7.567 3.045-13.381 9.135-17.534 4.338-2.676 9.506-4.152 14.12-4.152 11.996 0 20.394 8.582 20.394 20.948 0 8.397-3.322 15.041-9.69 19.102-3.045 2.03-8.305 3.968-12.643 3.968h.001zM187.411 81.595c-1.938 0-3.691.461-4.984 1.384-3.598 2.215-5.444 6.645-5.444 13.104 0 12.09 6.09 20.58 14.765 20.58 2.584 0 4.614-.739 6.368-2.215 2.675-2.216 4.06-6.645 4.06-12.828 0-11.996-5.906-20.025-14.765-20.025zm1.661 39.497c-15.688 0-21.317-11.535-21.317-22.332 0-7.567 3.045-13.381 9.135-17.534 4.338-2.676 9.506-4.152 14.12-4.152 11.997 0 20.394 8.582 20.394 20.948 0 8.397-3.322 15.041-9.69 19.102-2.953 2.03-8.213 3.968-12.642 3.968zm-105.478-.923c-.185-.276-.37-1.107-.277-2.122 0-.739.185-1.2.277-1.384 1.938-.278 2.953-.555 4.06-.831 1.846-.462 2.584-1.476 2.676-3.783.278-5.537.278-16.058.185-23.348v-.185c0-.83 0-1.846-1.015-2.584-1.477-.922-3.23-1.752-5.537-2.4-.83-.275-1.384-.737-1.292-1.29 0-.554.554-1.2 1.754-1.385 3.045-.277 10.98-2.214 14.118-3.599.185.184.462.739.462 1.477l-.092 1.014c-.093 1.016-.185 2.216-.185 3.415 0 .369.37.646.738.646.185 0 .37-.092.554-.185 5.906-4.614 11.258-6.275 14.026-6.275 4.523 0 8.03 2.123 10.706 6.552.184.278.369.37.646.37.184 0 .46-.092.553-.277 5.445-4.153 10.89-6.645 14.488-6.645 8.582 0 13.658 6.368 13.658 17.165 0 3.045 0 7.013-.092 10.613 0 3.229-.092 6.182-.092 8.305 0 .46.645 1.937 1.66 2.214 1.292.646 3.046.923 5.353 1.292h.092c.185.646-.184 3.045-.553 3.507-.554 0-1.385 0-2.307-.092a136.208 136.208 0 0 0-7.014-.185c-5.721 0-8.674.092-11.536.277-.183-.738-.276-2.953 0-3.507 1.662-.276 2.492-.554 3.508-.83 1.846-.554 2.307-1.385 2.4-3.784 0-1.753.368-16.703-.186-20.302-.553-3.691-3.322-8.028-9.413-8.028-2.307 0-5.905.923-9.412 3.598-.184.185-.37.646-.37.923v.093c.37 1.937.37 4.153.37 7.567v5.998c0 4.153-.093 8.029 0 10.981 0 2.031 1.2 2.492 2.215 2.862.554.091.922.184 1.384.276.83.185 1.661.37 2.953.646.185.37.185 1.569-.092 2.584-.093.554-.278.83-.37.923-3.137-.092-6.367-.185-11.073-.185-1.384 0-3.784.093-5.814.093-1.662 0-3.23.092-4.152.092-.093-.185-.278-.83-.278-1.846 0-.83.185-1.476.37-1.661.461-.092.83-.184 1.292-.184 1.106-.185 2.03-.37 2.952-.554 1.57-.461 2.123-1.292 2.215-3.322.277-4.614.554-17.81-.092-21.133-1.107-5.352-4.152-8.028-9.044-8.028-2.86 0-6.46 1.384-9.412 3.6-.462.368-.831 1.29-.831 2.121v5.445c0 6.644 0 14.95.092 18.549.093 1.106.461 2.399 2.584 2.86.462.092 1.2.277 2.123.37l1.66.276c.186.554.093 2.769-.276 3.507-.923 0-2.03-.092-3.323-.092-1.937-.093-4.429-.185-7.197-.185-3.23 0-5.537.092-7.383.185-1.292-.185-2.307-.185-3.414-.185z"/><path fill="#78797d" d="M35.053 142.317l-3.783-1.293s.462-19.286-6.46-20.67c-4.613-5.353.74-227.013 17.35-.739 0 0-5.722 2.86-6.737 7.752-1.108 4.799-.37 14.95-.37 14.95z"/><path fill="#78797d" d="M35.053 142.317l-3.783-1.293s.462-19.286-6.46-20.67c-4.613-5.353.74-227.013 17.35-.739 0 0-5.722 2.86-6.737 7.752-1.108 4.799-.37 14.95-.37 14.95z"/><path fill="#78797d" d="M37.084 123.676s33.13-21.779 25.377-67.09c-7.474-32.943-25.1-43.74-27.038-47.893C33.301 5.74 31.27.573 31.27.573l1.385 91.634c0 .093-2.861 28.054 4.43 31.47"/><path fill="#78797d" d="M37.084 123.676s33.13-21.779 25.377-67.09c-7.474-32.943-25.1-43.74-27.038-47.893C33.301 5.74 31.27.573 31.27.573l1.385 91.634c0 .093-2.861 28.054 4.43 31.47"/><path fill="#78797d" d="M29.333 124.875S-1.767 103.65.079 66.277C1.832 28.903 23.795 10.539 28.04 7.217c2.769-2.953 2.861-4.061 3.046-7.014 1.938 4.153 1.569 62.106 1.845 68.934.83 26.3-1.476 50.756-3.598 55.738z"/><path fill="#78797d" d="M29.333 124.875S-1.767 103.65.079 66.277C1.832 28.903 23.795 10.539 28.04 7.217c2.769-2.953 2.861-4.061 3.046-7.014 1.938 4.153 1.569 62.106 1.845 68.934.83 26.3-1.476 50.756-3.598 55.738z"/></g></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 128 128" viewBox="0 0 128 128"><g fill="#78797d"><circle cx="64" cy="64" r="11.4"/><path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3-12.5 4.8-19.3 11.4-19.3 18.8s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zm-14.8-30.5c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zm-11.2 59.3c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zm-25.6 27.1c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zm25.6-27.1c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zm-54.5-16.2c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zm-24.7 29c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5-13.8-4-22.1-10-22.1-15.6zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zm60.8-20.3c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"/></g></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="2500" preserveAspectRatio="xMinYMin meet" viewBox="0 0 256 256"><path fill="#78797d" d="M0 0h256v256H0V0z"/><path fill="#242529" d="M67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371 7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259-19.245 0-30.416-9.967-36.087-21.996M152.381 211.354l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607 9.969 0 16.325-4.984 16.325-11.858 0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257 0-18.044 13.747-31.792 35.228-31.792 15.294 0 26.292 5.328 34.196 19.247L210.29 147.43c-4.125-7.389-8.591-10.31-15.465-10.31-7.046 0-11.514 4.468-11.514 10.31 0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804 0 21.654-17.012 33.51-39.867 33.51-22.339 0-36.774-10.654-43.819-24.574"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><polygon fill="#78797d" points="3.345 21.601 1.419 0 22.581 0 20.653 21.598 11.987 24 3.345 21.601"/><polygon fill="#242529" points="12 22.164 19.002 20.222 20.65 1.766 12 1.766"/><path fill="#78797d" d="M12,9.778H8.495L8.252,7.065H12v-2.65H5.357l0.063,0.711l0.651,7.3H12V9.778L12,9.778z M12,16.658l-0.012,0.003l-2.95-0.797l-0.189-2.113H6.19l0.371,4.16l5.427,1.507L12,19.414V16.658L12,16.658z"/><path fill="#78797d" d="M11.991,9.778v2.649h3.263l-0.308,3.436l-2.955,0.797v2.756l5.431-1.505l0.04-0.448l0.623-6.974l0.064-0.712h-0.714H11.991L11.991,9.778z M11.991,4.415v2.65h6.399l0.053-0.596l0.121-1.343l0.063-0.711H11.991L11.991,4.415z"/><polygon fill="#78797d" points="12 23.996 11.987 24 12 24 12 23.996"/><path fill="#78797d" d="M12,7.065L12,7.065H8.252l0.242,2.713h3.496H12V7.065L12,7.065z M12,0H1.419l1.926,21.601L11.987,24L12,23.996v-4.582v0l-0.012,0.004l-5.427-1.507l-0.371-4.16h2.659l0.189,2.113l2.95,0.797l0.003-0.001v0L12,16.658v-4.231H6.071l-0.651-7.3L5.357,4.415h6.634H12V0L12,0z"/><path fill="#242529" d="M8.849,13.751H6.19l0.371,4.16l5.427,1.507L12,19.414v0l-0.009,0.002v-2.756l-0.003,0.001l-2.95-0.797L8.849,13.751L8.849,13.751z M11.991,4.415H5.357l0.063,0.711l0.651,7.3H12h-0.009V9.778H8.495L8.252,7.065H12h-0.009V4.415L11.991,4.415z"/><path fill="#242529" d="M12,16.658l-0.009,0.002v0v2.756L12,19.414V16.658L12,16.658z M12,9.778h-0.009v2.649H12V9.778L12,9.778z M12,4.415h-0.009v2.65H12V4.415L12,4.415z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#78797d" d="M1 0l1.275 14.4L8 16l5.723-1.599L15 0z"/><path fill="#242529" d="M12.274 4.709l-.161 1.809-.486 5.423L8 12.944l-.003.001-3.625-1.004-.253-2.836h1.776l.132 1.471 1.971.532.001-.001 1.974-.532.269-2.451-6.208.017-.176-1.676 6.533-.077.132-1.794-6.84.019-.115-1.669h8.864z"/></svg>
+                </div>
             </div>
-          </div>
         </div>
-		<!-- ==========================
-        CUSTOM SPACER END
-        =========================== -->
-		
-		
+    </section>
+    <!-- ==================== Technologies ==================== -->
 
-    <!-- ==========================
-        Timeline SECTION 
-        =========================== -->
-        <section class="timeline-1">
-				<div class="container">
-                        <div class="row swag text-center">
-                                <h1 class="arrow">
-                                  Here is a Little of <span>My Story</span>
-                                </h1>
+    <!-- ==================== Projects ==================== -->
+    <section id="work" class='s1'>
+        <div class="container">
+            <div class="projects-wrapper wrapper">
+                <div class="projects">
+                    <div class="projects-left">
+                        <div class="heading">
+                            <h5><span>RECENT PROJECTS</span></h5>
                         </div>
-					
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="timeline-event">
-								<div class="col-sm-6 col-md-push-6">
-									<h2>November, 2018 - Continue</h2>
-									<h5>Full-Stack Developer At Ayuda Media Systems<br></h5>
-								</div>
-								
-								<div class="middle">
-                                    <i class="fas fa-code-branch"></i>
-									<div class="vertical-line"></div>
-								</div>
-								
-								<div class="col-sm-6 col-md-pull-6">
-                                      <p>Work collaboratively with clients and in-house agency teams to provide rapid, robust and client-acclaimed front- and back-end web development optimizing user experience</p>
+                        <div class="project">
+                            <div class="descreption">
+                                <div class="title">
+                                    <h4>YelpCamp on Heroku</h4>
+                                    <p>Web Development</p>
+                                    <a href='#' target='_blank'><span>Source Code</span></a>
                                 </div>
-								
-								
-							</div>
-							
-							<div class="timeline-event">
-								<div class="col-sm-6">
-									<h2>Sept. 2016- June 2018</h2>
-									<h5>Electrical & computer Science (M.Engg)</h5>	
-								</div>
-								
-								<div class="middle">
-                                    <i class="fas fa-graduation-cap"></i>
-									<div class="vertical-line"></div>
-								</div>
-								
-								<div class="col-sm-6">
-									<p>Completed Masters of Engineering in <strong>Computer Science</strong> with <strong>3.5 CGPA</strong> at Concordia University, Montreal, Canada.</p>
-								</div>
-							</div>
-							
-							<div class="timeline-event">
-								<div class="col-sm-6 col-md-push-6">
-									<h2>Nov. 2014 - August 2016</h2>
-									<h5>Software Developer</h5>
-								</div>
-								
-								<div class="middle">
-                                    <i class="fas fa-code"></i>
-									<div class="vertical-line"></div>
-								</div>
-								
-								<div class="col-sm-6 col-md-pull-6">
-                                       <p>
-                                            Experiance working in green-field Project as well as handled routin maintainance, recovery & failover of database server.
-                                            Design & Developed services for certain task, that <strong>save 50% times</strong> as well helped <strong>solve problems</strong>.    
-                                       </p> 
+                                <div class="tech">
+                                    <p>NodeJs</p>
+                                    <p>ExpressJs</p>
+                                    <p>MongoDB</p>
                                 </div>
-								
-								
-							</div>
-							
-							<div class="timeline-event">
-								<div class="col-sm-6">
-									<h2>July 2013- Nov. 2014</h2>
-									<h5>Web Developer Intern</h5>	
-								</div>
-								
-								<div class="middle">
-                                    <i class="fas fa-globe-europe"></i>
-									<div class="vertical-line"></div>
-								</div>
-								
-								<div class="col-sm-6">
-									<p>Good Development experience using Windows Platforms
-                                            with ASP.NET with C#, NodeJs, AngularJs.REST APIs development to be consumed by mobile
-                                            application team.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-		
-				</div>
-			</section>
-
-		
-		
-		<!-- ==========================
-        CONTACT SECTION
-        =========================== -->
-        <section class="text-center section-padding contact-wrap" id="contact">
-		  <!-- To Top Button -->
-          <!-- <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a> -->
-          <div class="container">
-		    <!-- Headline -->
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">Drop <span>me</span> a line</h1>
-              </div>
+                            </div>
+                            <img src="https://images.pexels.com/photos/618848/pexels-photo-618848.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                        </div>
+                        <div class="project">
+                            <div class="descreption">
+                                <div class="title">
+                                    <h4>Restaurant Management System</h4>
+                                    <p>Front-End Development</p>
+                                    <a href='#' target='_blank'><span>Source Code</span></a>
+                                </div>
+                                <div class="tech">
+                                    <p>Angular 6+</p>
+                                    <p>Angular Animations</p>
+                                    <p>Firebase</p>
+                                </div>
+                            </div>
+                            <img src="https://images.pexels.com/photos/35550/ipad-tablet-technology-touch.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                        </div>
+                        <div class="project">
+                            <div class="descreption">
+                                <div class="title">
+                                    <h4>Auction System</h4>
+                                    <p>Web Development, E-Commerce</p>
+                                    <a href='#' target='_blank'><span>Source Code</span></a>
+                                </div>
+                                <div class="tech">
+                                    <p>C#, .Net</p>
+                                    <p>WebRTC, SignalR</p>
+                                    <p>MCV5</p>
+                                </div>
+                            </div>
+                            <img src="https://image.freepik.com/free-vector/man-stand-leading-auction-hold-gavel_102902-161.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="projects-right">
+                        <div class="project">
+                            <div class="descreption">
+                                <div class="title">
+                                    <h4>Distance Learning</h4>
+                                    <p>Web Development</p>
+                                    <a href='#' target='_blank'><span>Source Code</span></a>
+                                </div>
+                                <div class="tech">
+                                    <p>C#, .Net</p>
+                                    <p>WebRTC, SignalR</p>
+                                    <p>MCV5</p>
+                                </div>
+                            </div>
+                            <img src="https://images.pexels.com/photos/5054213/pexels-photo-5054213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                        </div>
+                        <div class="project">
+                            <div class="descreption">
+                                <div class="title">
+                                    <h4>Event Management</h4>
+                                    <p>Web Development</p>
+                                    <p><span>Project is under construction. Coming soon!</span></p>
+                                </div>
+                                <div class="tech">
+                                    <p>NodeJs</p>
+                                    <p>GraphQL</p>
+                                    <p>MongoDB</p>
+                                </div>
+                            </div>
+                            <img src="https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                        </div>
+                        <div class="project">
+                            <div class="descreption">
+                                <div class="title">
+                                    <h4>Personal Portfolio</h4>
+                                    <p>Website Design</p>
+                                    <a href='#' target='_blank'><span>Source Code</span></a>
+                                </div>
+                                <div class="tech">
+                                    <p>HTML</p>
+                                    <p>css</p>
+                                    <p>JavaScript</p>
+                                </div>
+                            </div>
+                            <img src="./assets/portfolio-pic.JPG" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row contact-details">
-			  <!-- Adress Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
-                  <p>2150 Boulevard de Maisonneuve O, Montreal, Canada</p>
-                </div>
-              </div>
-			  <!-- Phone Number Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-                  <p>+1 (514)-706-5942</p>
-                </div>
-              </div>
-			  <!-- E-Mail Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
-                  <p><a href="index.html#">hridaysur@yahoo.co.in</a></p>
-                </div>
-              </div>
-            </div>
-			<div class="row">
-			  <!-- Google Maps (Change your Settings below) -->
-			  <div class="col-md-6">
-			    <div id="googlemaps"></div>
-			  </div>
-			  <!-- Contact Form -->
-			  <div class="col-md-6 contact">
-			     <form role="form" id="contactForm">
-              <!-- Name -->
-              <div class="row">
-                  <div class="col-md-6">
-                      <!-- E-Mail -->
-                      <div class="form-group">
-                          <input type="text" class="form-control" id="name" placeholder="Your name" required>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <!-- Phone Number -->
-                      <div class="form-group">
-                          <input type="email" id="email" class="form-control" placeholder="Email address" required>
-                      </div>
-                  </div>
-              </div>
-              <!-- Message Area -->
-              <div class="form-group">
-                  <textarea class="form-control" id="msg" placeholder="Write you message here..." style="height:232px;" required></textarea>
-              </div>
-              <!-- Subtmit Button -->
-              <button type="submit" class="btn btn-send">
-                  Send message
-              </button>
-            </form>
         </div>
-			</div>
-			<br>
-			<!-- Social Buttons - use font-awesome, past in what you want -->
-            <div class="row">
-              <div class="col-md-12">
-                <ul class="social-buttons">
-                  <li><a href="https://www.facebook.com/hridays" target= "_blank" class="social-btn"><i class="fab fa-facebook-square"></i></a>                  </li><!-- dribble -->
-                  <li><a href="https://www.linkedin.com/in/hridaysur/" target= "_blank" class="social-btn"><i class="fab fa-linkedin"></i></a></li> 
-                  <li><a href="https://bitbucket.org/hridaysur/" target= "_blank" class="social-btn"><i class="fab fa-bitbucket"></i></a></li>
-                  <li><a href="https://twitter.com/Hriday07" target= "_blank" class="social-btn"><i class="fab fa-twitter-square"></i></a> </li>
-                </ul>
-              </div>
+    </section>
+    <!-- ==================== Projects ==================== -->
+
+    <!-- ==================== My Story ==================== -->
+    <section id="" class='s2'>
+        <div class="container">
+            <div class="story-wrapper wrapper">
+                <div class="heading">
+                    <h5><span>MY STORY</span></h5>
+                </div>
+                <div class="story">
+                    <div class="story-left">
+                        <h4>July'21 - Continue</h4>
+                        <h3>Software Engineer at Amazon</h3>
+                    </div>
+                    <div class="story-right">
+                        <p>
+                            Work collaboratively with clients and in-house agency teams to provide rapid, robust and client-acclaimed front- and back-end web development optimizing user experience
+                        </p>
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="story-left">
+                        <h4>Nov'18 - June'21</h4>
+                        <h3>Full-stack Developer at Ayuda Media Systems</h3>
+                    </div>
+                    <div class="story-right">
+                        <p>
+                            Work collaboratively with clients and in-house agency teams to provide rapid, robust and client-acclaimed front- and back-end web development optimizing user experience
+                        </p>
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="story-left">
+                        <h4>Sep'16 - June'18</h4>
+                        <h3>Electrical & <br> Computer Science (M. Engg.)</h3>
+                    </div>
+                    <div class="story-right">
+                        <p>
+                            Completed Masters of Engineering in Computer Science with 3.5 CGPA at Concordia University, Montreal, Canada.                        
+                        </p>
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="story-left">
+                        <h4>Nov'14 - Aug'16</h4>
+                        <h3>Software Developer</h3>
+                    </div>
+                    <div class="story-right">
+                        <p>
+                            Experiance working in green-field Project as well as handled routin maintainance, recovery & failover of database server. Design & Developed services for certain task, that save 50% times as well helped solve problems.
+                        </p>
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="story-left">
+                        <h4>July'13 - Nov'14</h4>
+                        <h3>Web Developer Intern</h3>
+                    </div>
+                    <div class="story-right">
+                        <p>
+                            Good Development experience using Windows Platforms with ASP.NET with C#, NodeJs, AngularJs.REST APIs development to be consumed by mobile application team.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+    </section>
+    <!-- ==================== My Story ==================== -->
+
+    <!-- ==================== Contact ==================== -->
+    <section id="" class='s1'>
+        <div class="container">
+            <div class="story-wrapper wrapper">
+                <div class="heading">
+                    <h5><span>CONTACT</span></h5>
+                </div>
+                <div class="story">
+                    <div class="story-left">
+                        <h4>Email</h4>
+                        <a href="mailto:hridaysur@yahoo.co.in">hridaysur@yahoo.co.in</a>
+                    </div>
+                </div>
+                <br>
+                <div class="story">
+                    <div class="story-left">
+                        <h4>Phone</h4>
+                        <a href="tel:+15147065942">+1 (514)-706-5942</a>
+                    </div>
+                </div>
+                <br>
+                <div class="story">
+                    <div class="story-left">
+                        <h4>Address</h4>
+                        <address>
+                            2150 Boulevard de Maisonneuve O, Montreal, Canada
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== Contact ==================== -->
+
+    <!-- ==================== Footer ==================== -->
+    <section id="contact" class='s2'>
+        <div class="footer container">
+            <div class="story-wrapper wrapper">
+                <footer>
+                    <div class="footer-upper">
+                        <a href="index.html"><h3 class=logo>Hriday <span>Sur</span></h3></a>
+                        <p>&copy; 2021</p>
+                    </div>
+                    <ul class="social-links">
+                        <li><a class="social-link" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a class="social-link" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="social-link" href="#"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </footer>
+                </div>
+            </div>
         </section>
-		<!-- ==========================
-        CONTACT SECTION END
-        =========================== -->
-		
-		
-		
-		<!-- ==========================
-        FOOTER SECTION
-        =========================== -->
-     
-		<!-- ==========================
-        FOOTER SECTION END
-        =========================== -->		
+    <!-- ==================== Footer ==================== -->
 
-        <!-- Portfolio Modals -->
 
-         <!-- Modal 1 -->
-   
-         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content" style="width: 95vw;">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="mx-auto">
-                  <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2 class="text-uppercase">YelpCamp on Heroku</h2>
-                    <p class="item-intro text-muted">NodeJS, ExpressJS, MongoDB</p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/campsite.jpeg" alt="">
-                    <h3>Developed YelpCamp Using JavaScript fullstack includes NodeJs, MongoDB, ExpressJs, EJS templetes.
-                        Front-End also includes HTML5, CSS3, Bootstrap, JavaScript. Back-End was supported by NodeJs, MongoDB, ExpressJs, PassportJS, RestAPI.
-                        Used PassportJS & JWT Authentication & secure routing. Used Socket.IO for build Reat-Time notification.Used GoogleAPI to display Camp location.
-                        Deploy & Manage on Heroku. Used Git & BitBucket as version control.</h3>
-                    <ul class="list-inline">
-                      <li>Date: January 2018</li>
-                      <li>Category: Web Development</li>
-                    </ul>
-                    <a class="btn btn-success" type="button" href="https://hridaysur@bitbucket.org/hridaysur/yelpcamp-api" target= "_blank">
-                        <i class="fas fa-code-branch"></i>
-                        Source Code</a>
-                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                      <i class="fas fa-times"></i>
-                      Close Project</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        
-       <!-- Modal 2 -->
-       <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content" style="width: 95vw;">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="mx-auto">
-                  <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2 class="text-uppercase">Restaurant Management System</h2>
-                    <p class="item-intro text-muted">Angular 6+, Angular Animations, Firebase</p>
-                    <img class="img-fluid d-block mx-auto thumbnail" src="img/portfolio/restaurant-technology-TEASER.png" alt="">
-                    <p>Developed Single page application using Angular 2+, CSS3, HTML5, Bootstrap.Design & Developed Angular Routes.
-                        Also Includes fetures of Angular 2+ like Observables, Directives, Services & Dependency Injections, Components & Data-bindings,
-                        Template driven as well as reactive approach to angular Forms. HTTP as well HTTPClient Module, Authemtication & Route protection, NgRx.
-                        Also include offline capabilities using service worker to develope progressive web app. Used Angular animation as well as CSS3 animation.</p>
-                    <ul class="list-inline">
-                      <li>Date: May 2018</li>
-                      <li>Category: Web Design, Front-End Development</li>
-                    </ul>
-                    <a class="btn btn-success" type="button" href="https://hridaysur@bitbucket.org/hridaysur/restaurant-management" target= "_blank">
-                        <i class="fas fa-code-branch"></i>
-                        Source Code</a>
-                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                      <i class="fas fa-times"></i>
-                      Close Project</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Modal 3 -->
-      <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content" style="width: 95vw;">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="mx-auto">
-                  <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2 class="text-uppercase">Auction System</h2>
-                    <p class="item-intro text-muted">C#, .Net, WebRTC, SignalR, MVC5</p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/e-commerce-platforms.png" alt="">
-                    <p>Design & Developed Auction System on cloud using C#, .net framework. Front-End includes CSHTML, HTML5, CSS, JavaSript, Jquery, SemanticUI.
-                            Along with C#, .net used MVC framework as design architecture. Developed RESTful routes. Used Microsoft SQL server as Database.
-                           Used ADO.net & entity framework to perform database query. Implement Login Logout module as well session & caching.
-                           Used SignalR Library to implement Real-time voice notification.</p>
-                    <ul class="list-inline">
-                      <li>Date: September 2017</li>
-                      <li>Category: Web Development</li>
-                    </ul>
-                    <a class="btn btn-success" type="button" href="https://hridaysur@bitbucket.org/hridaysur/restaurant-management" target= "_blank">
-                        <i class="fas fa-code-branch"></i>
-                        Source Code</a>
-                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                      <i class="fas fa-times"></i>
-                      Close Project</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Modal 4 -->
-      <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content" style="width: 95vw;">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="mx-auto">
-                  <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2 class="text-uppercase">Distance-Learning Application</h2>
-                    <p class="item-intro text-muted">C#, .Net, MVC5, WebRTC, SignalR</p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/distance-learning.jpg" alt="">
-                    <p>Design & Developed Distance-Learning using C#, .net framework. Front-End includes CSHTML, HTML5, CSS, JavaSript, Jquery, SemanticUI.
-                            Along with C#, .net used MVC framework as design architecture. Developed RESTful routes. Used Azure CosmosDB as Database.
-                           Used ADO.net & entity framework to perform database query. Implement Login Logout module as well session & caching.
-                           Used SignalR Library to implement Real-time voice notification. WebRTC to implement Real-Time Voice & Video Calling functionality.</p>
-                    <ul class="list-inline">
-                      <li>Date: November 2018</li>
-                      <li>Category: Web Development</li>
-                    </ul>
-                    <a class="btn btn-success" type="button" href="https://hridaysur@bitbucket.org/hridaysur/restaurant-management" target= "_blank">
-                        <i class="fas fa-code-branch"></i>
-                        Source Code</a>
-                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                      <i class="fas fa-times"></i>
-                      Close Project</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Modal 5 -->
-      <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content" style="width: 95vw;">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="mx-auto">
-                  <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2 class="text-uppercase">Event Management System</h2>
-                    <p class="item-intro text-muted">NodeJs, GraphQL, MongoDB</p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/event-management.jpeg" alt="">
-                    <p>Project is under construction. Coming Soon!!!</p>
-                    <ul class="list-inline">
-                      <li>Date: January 2019</li>
-                      <li>Category: Web Development</li>
-                    </ul>
-                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                      <i class="fas fa-times"></i>
-                      Close Project</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Modal 6 -->
-      <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content" style="width: 95vw;">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="mx-auto">
-                  <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2 class="text-uppercase">Personal Portfolio</h2>
-                    <p class="item-intro text-muted">HTML, CSS, JavaScript</p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/DSC_0592.JPG" alt="">
-                    <p>Personal Portfolio Using simple HTML5, CSS, Javascript</p>
-                    <ul class="list-inline">
-                      <li>Date: January 2019</li>
-                      <li>Category: Website Design</li>
-                    </ul>
-                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                      <i class="fas fa-times"></i>
-                      Close Project</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-		
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- SmoothScroll -->           
-    <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
-    <!-- Scrollout -->
-    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/waypoints.min.js"></script>
-    <!-- classie.js -->
-	<script src="js/classie.js"></script>
-    <!-- FlexSlider -->
-    <script src="assets/flexslider/jquery.flexslider.js"></script>
-	<!-- Modernizr -->
-    <script src="js/modernizr.js"></script>
-	<!-- Text Rotator -->
-	<script src="js/morphext.min.js"></script>
-	<!-- Lightbox.js -->
-    <script src="assets/lightbox/js/lightbox.min.js"></script>
-    <!-- Google Maps --> 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAlAm2U1wolK3HKyrQwwrPpkIGjzVSsbE"></script>
-    <!-- Alertify -->
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/alertify.min.js"></script>
-    <!-- Theme JavaScript Core -->
-	<script src="js/main.js"></script>
-	<script src="js/script.js"></script>
 
-	<!-- GOOGLE MAPS DATA -->
-    <script type="text/javascript">
-    // When the window has finished loading create our google map below
-        google.maps.event.addDomListener(window, 'load', init);
-    
-        function init() {
-            // Basic options for a simple Google Map
-            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-            var mapOptions = {
-                // How zoomed in you want the map to start at (always required)
-                zoom: 15,
-                
-                scrollwheel: false,
-
-                // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(45.5017, 73.5673), // New York 
-
-                // How you would like to style the map. 
-                // This is where you would paste any style found on Snazzy Maps.
-                styles: [	{		featureType:'water',		stylers:[{color:'#F2F2F2'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#FFFFFF'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#ADADAD'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
-            };
-
-            // Get the HTML DOM element that will contain your map 
-            // We are using a div with id="map" seen below in the <body>
-            var mapElement = document.getElementById('googlemaps');
-
-            // Create the Google Map using out element and options defined above
-            var map = new google.maps.Map(mapElement, mapOptions);
-        }
-	
-    </script>
-	
-	<!-- TEXT ROTATOR SETTINGS -->
-    <!-- TEXT ROTATOR SETTINGS -->
-    <script type="text/javascript">
-      $(".rotate").Morphext({
-      // The [in] animation type. Refer to Animate.css for a list of available animations.
-      animation: "fadeIn",
-      // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
-      separator: ",",
-      // The delay between the changing of each phrase in milliseconds.
-      speed: 2000
-      });
-      </script>
-    </body>
+    <!-- ==================== Script ==================== -->
+    <script src="./main.js"></script>
+</body>
 </html>
