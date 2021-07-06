@@ -168,7 +168,7 @@ header .container {
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     margin-bottom: 3rem;
   }
 
@@ -184,31 +184,32 @@ header .container {
   }
 }
 
-@keyframes heartBeat {
-  0% {
-    transform: scale(1);
-  }
-  1% {
-    transform: scale(0.98);
-  }
-  5% {
-    transform: scale(1.01);
-  }
-  6% {
-    transform: scale(0.98);
-  }
-  10% {
-    transform: scale(1.01);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+// Hriday HeartBeat Animation
+// @keyframes heartBeat {
+//   0% {
+//     transform: scale(1);
+//   }
+//   1% {
+//     transform: scale(0.98);
+//   }
+//   5% {
+//     transform: scale(1.01);
+//   }
+//   6% {
+//     transform: scale(0.98);
+//   }
+//   10% {
+//     transform: scale(1.01);
+//   }
+//   100% {
+//     transform: scale(1);
+//   }
+// }
 
-.hriday {
-  display: block;
-  animation: 4s heartBeat infinite;
-}
+// .hriday {
+//   display: block;
+//   animation: 4s heartBeat infinite;
+// }
 
 .photo {
   background: $color-dark;

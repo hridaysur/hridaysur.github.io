@@ -177,7 +177,7 @@ header .container {
 }
 
 .intro p {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   margin-bottom: 3rem;
 }
 
@@ -191,66 +191,6 @@ header .container {
 .intro a:hover {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-}
-
-@-webkit-keyframes heartBeat {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  1% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-  }
-  5% {
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-  }
-  6% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-  }
-  10% {
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes heartBeat {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  1% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-  }
-  5% {
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-  }
-  6% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-  }
-  10% {
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-.hriday {
-  display: block;
-  -webkit-animation: 4s heartBeat infinite;
-          animation: 4s heartBeat infinite;
 }
 
 .photo {
