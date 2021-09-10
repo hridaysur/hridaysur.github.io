@@ -184,33 +184,6 @@ header .container {
   }
 }
 
-// Hriday HeartBeat Animation
-// @keyframes heartBeat {
-//   0% {
-//     transform: scale(1);
-//   }
-//   1% {
-//     transform: scale(0.98);
-//   }
-//   5% {
-//     transform: scale(1.01);
-//   }
-//   6% {
-//     transform: scale(0.98);
-//   }
-//   10% {
-//     transform: scale(1.01);
-//   }
-//   100% {
-//     transform: scale(1);
-//   }
-// }
-
-// .hriday {
-//   display: block;
-//   animation: 4s heartBeat infinite;
-// }
-
 .photo {
   background: $color-dark;
   box-shadow: 0 0 10000px $color-accent;
@@ -371,13 +344,18 @@ header .container {
 }
 
 // ==================== Story ====================
+
 .story:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .story-left {
-  flex: 1;
-  margin-right: 50px;
+  img {
+    display: none;
+  }
+}
+
+.story-right {
   h4 {
     color: $color-accent;
   }
@@ -386,14 +364,6 @@ header .container {
     color: $color-secondary-text;
     margin-bottom: 10px;
   }
-}
-
-.story-middle {
-  display: none;
-}
-
-.story-right {
-  flex: 1.5;
   p {
     font-size: 1rem;
     color: $color-primary-text;
@@ -507,31 +477,20 @@ footer {
   .story {
     display: flex;
     align-items: center;
-    position: relative;
+    gap: 50px;
   }
 
-  .story-wrapper .story-left {
-    text-align: right;
+  .story:nth-child(2n + 1) {
+    flex-direction: row-reverse;
+    .story-right {
+      text-align: right;
+    }
   }
 
-  .story-middle {
-    display: block;
-    margin-right: 50px;
-    i {
-      color: $color-light;
-      font-size: 2rem;
-      justify-self: center;
-      margin-bottom: 10px;
+  .story-left {
+    img {
+      width: 250px;
+      display: block;
     }
-    i:last-child {
-      margin-top: 30px;
-    }
-  }
-  .vertical-line {
-    width: 2px;
-    height: 80%;
-    background-color: $color-light;
-    position: absolute;
-    margin-left: 10px;
   }
 }
