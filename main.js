@@ -1,9 +1,23 @@
 // Mobile Menu
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu')
+const navLinks = document.querySelectorAll('.nav-link')
 
 hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('nav-menu-active')
+})
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.toggle('nav-menu-active')
+    })
+})
+
+window.addEventListener('click', e => {
+    console.log(e.target.id)
+    if (e.target.id !== 'hamburger' && e.target.id !== 'nav-menu' && e.target.id !== 'line') {
+        navMenu.classList.remove('nav-menu-active')
+    }
 })
 
 // Change Header's Background while scrolling
