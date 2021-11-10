@@ -15,7 +15,7 @@
         <div class="container">
             <nav class="navbar">
                 <a href="index.html"><h1 class=logo>Hriday <span>Sur</span></h1></a>
-                    <ul class="nav-menu">
+                    <ul id='nav-menu' class="nav-menu">
                         <li><a class="nav-link" href="#home">Home</a></li>
                         <li><a class="nav-link" href="#about">About</a></li>
                         <li><a class="nav-link" href="#work">Work</a></li>
@@ -27,10 +27,10 @@
                         <li><a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a class="social-link" href="#"><i class="fab fa-github"></i></a></li>
                     </ul> -->
-                <div class="hamburger">
-                    <span class="line1"></span>
-                    <span class="line2"></span>
-                    <span class="line3"></span>
+                <div id='hamburger' class="hamburger">
+                    <span id='line' class="line1"></span>
+                    <span id='line' class="line2"></span>
+                    <span id='line' class="line3"></span>
                 </div>
             </nav>
         </div>
@@ -160,98 +160,10 @@
                         <div class="heading">
                             <h5><span>RECENT PROJECTS</span></h5>
                         </div>
-                        <div class="project">
-                            <div class="descreption">
-                                <div class="title">
-                                    <h4>YelpCamp on Heroku</h4>
-                                    <p>Web Development</p>
-                                    <!-- <a href='#' target='_blank'><span>Source Code</span></a> -->
-                                </div>
-                                <div class="tech">
-                                    <p>NodeJs</p>
-                                    <p>ExpressJs</p>
-                                    <p>MongoDB</p>
-                                </div>
-                            </div>
-                            <img src="https://images.pexels.com/photos/618848/pexels-photo-618848.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                        </div>
-                        <div class="project">
-                            <div class="descreption">
-                                <div class="title">
-                                    <h4>Restaurant Management System</h4>
-                                    <p>Front-End Development</p>
-                                    <!-- <a href='#' target='_blank'><span>Source Code</span></a> -->
-                                </div>
-                                <div class="tech">
-                                    <p>Angular 6+</p>
-                                    <p>Angular Animations</p>
-                                    <p>Firebase</p>
-                                </div>
-                            </div>
-                            <img src="https://images.pexels.com/photos/35550/ipad-tablet-technology-touch.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                        </div>
-                        <div class="project">
-                            <div class="descreption">
-                                <div class="title">
-                                    <h4>Auction System</h4>
-                                    <p>Web Development, E-Commerce</p>
-                                    <!-- <a href='#' target='_blank'><span>Source Code</span></a> -->
-                                </div>
-                                <div class="tech">
-                                    <p>C#, .Net</p>
-                                    <p>WebRTC, SignalR</p>
-                                    <p>MVC5</p>
-                                </div>
-                            </div>
-                            <img src="https://image.freepik.com/free-vector/man-stand-leading-auction-hold-gavel_102902-161.jpg" alt="">
-                        </div>
+                        <div id="project-left"></div>
                     </div>
-                    <div class="projects-right">
-                        <div class="project">
-                            <div class="descreption">
-                                <div class="title">
-                                    <h4>Distance Learning</h4>
-                                    <p>Web Development</p>
-                                    <!-- <a href='#' target='_blank'><span>Source Code</span></a> -->
-                                </div>
-                                <div class="tech">
-                                    <p>C#, .Net</p>
-                                    <p>WebRTC, SignalR</p>
-                                    <p>MVC5</p>
-                                </div>
-                            </div>
-                            <img src="https://images.pexels.com/photos/5054213/pexels-photo-5054213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                        </div>
-                        <div class="project">
-                            <div class="descreption">
-                                <div class="title">
-                                    <h4>Event Management</h4>
-                                    <p>Web Development</p>
-                                    <!-- <p><span>Project is under construction. Coming soon!</span></p> -->
-                                </div>
-                                <div class="tech">
-                                    <p>NodeJs</p>
-                                    <p>GraphQL</p>
-                                    <p>MongoDB</p>
-                                </div>
-                            </div>
-                            <img src="https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                        </div>
-                        <div class="project">
-                            <div class="descreption">
-                                <div class="title">
-                                    <h4>Personal Portfolio</h4>
-                                    <p>Website Design</p>
-                                    <!-- <a href='https://github.com/hridaysur/hridaysur.github.io' target='_blank'><span>Source Code</span></a> -->
-                                </div>
-                                <div class="tech">
-                                    <p>HTML</p>
-                                    <p>css</p>
-                                    <p>JavaScript</p>
-                                </div>
-                            </div>
-                            <img src="./assets/portfolio-pic.JPG" alt="">
-                        </div>
+                    <div class="project-right">
+                        <div id="project-right"></div>
                     </div>
                 </div>
             </div>
@@ -266,67 +178,7 @@
                 <div class="heading">
                     <h5><span>MY STORY</span></h5>
                 </div>
-                <div class="story">
-                    <div class="story-left">
-                        <img src="./assets/illustrations/undraw_programming_2svr.svg" alt="" >
-                    </div>
-                    <div class="story-right">
-                        <h4>July'21 - Continue</h4>
-                        <h3>Software Engineer at Amazon</h3>
-                        <p>
-                            Work collaboratively with clients and in-house agency teams to provide rapid, robust and client-acclaimed front- and back-end web development optimizing user experience
-                        </p>
-                    </div>
-                </div>
-                <div class="story">
-                    <div class="story-left">
-                        <img src="./assets/illustrations/undraw_Developer_activity_re_39tg.svg" alt="" >
-                    </div>
-                    <div class="story-right">
-                        <h4>Nov'18 - June'21</h4>
-                        <h3>Full-stack Developer at Ayuda Media Systems</h3>
-                        <p>
-                            Work collaboratively with clients and in-house agency teams to provide rapid, robust and client-acclaimed front- and back-end web development optimizing user experience
-                        </p>
-                    </div>
-                </div>
-                <div class="story">
-                    <div class="story-left">
-                        <img src="./assets/illustrations/undraw_teaching_f1cm.svg" alt="" >
-                    </div>
-                    <div class="story-right">
-                        <h4>Sep'16 - June'18</h4>
-                        <h3>Electrical & Computer Science (M. Engg.)</h3>
-                        <p>
-                            Completed Masters of Engineering in Computer Science with 3.5 CGPA at Concordia University, Montreal, Canada.
-                        </p>
-                    </div>
-                </div>
-                <div class="story">
-                    <div class="story-left">
-                        <img src="./assets/illustrations/undraw_Code_review_re_woeb.svg" alt="" >
-                    </div>
-                    <div class="story-right">
-                        <h4>Nov'14 - Aug'16</h4>
-                        <h3>Software Developer</h3>
-                        <p>
-                            xperiance working in green-field Project as well as handled routin maintainance, recovery & failover of database server. Design & Developed services for certain task, that save 50% times as well helped solve problems.
-                        </p>
-                    </div>
-                </div>
-                <div class="story">
-                    <div class="story-left">
-                        <img src="./assets/illustrations/undraw_feeling_proud_qne1.svg" alt="" >
-                    </div>
-                    <div class="story-right">
-                        <h4>July'13 - Nov'14</h4>
-                        <h3>Web Developer Intern</h3>
-                        <p>
-                            Good Development experience using Windows Platforms with ASP.NET with C#, NodeJs, AngularJs.REST APIs development to be consumed by mobile application team.
-                        </p>
-                    </div>
-                </div>
-            </div>
+                <div id="story"></div>
         </div>
     </section>
     <!-- ==================== My Story ==================== -->
