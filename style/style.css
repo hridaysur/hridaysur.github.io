@@ -15,7 +15,7 @@ html {
 body {
   background: #2c2d31;
   color: #ffffff;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   overflow-x: hidden;
 }
 
@@ -72,7 +72,9 @@ header {
 }
 
 .header-background {
-  background: #242529;
+  background-color: rgba(36, 37, 41, 0.9);
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+          backdrop-filter: saturate(180%) blur(5px);
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms;
 }
@@ -96,7 +98,7 @@ header .container {
 }
 
 .logo {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   z-index: 999;
 }
 
@@ -120,10 +122,12 @@ header .container {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: fixed;
-  top: -100%;
+  top: -500%;
   left: 0;
   right: 0;
-  background-color: #5bcb8b;
+  background-color: rgba(91, 203, 139, 0.9);
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+          backdrop-filter: saturate(180%) blur(5px);
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms;
 }
@@ -182,7 +186,7 @@ header .container {
 }
 
 .intro a {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #5bcb8b;
   text-decoration: underline;
@@ -471,6 +475,8 @@ footer ul li a:hover {
         -ms-flex-pack: end;
             justify-content: flex-end;
     background: transparent;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
     width: 70%;
   }
   .nav-menu li:not(:last-child) {
